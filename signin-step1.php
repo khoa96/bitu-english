@@ -3,8 +3,100 @@
 <body>
   <div class="sign-in-page-wrapper background-common">
     <div class="page-content-wrapper-common">
-      <div class="container">
-        Sign in page
+      <a href="#" target="_self" title="" class="header-logo">
+        <img src="./images/logo-bitu-kids.png" class="header-logo-image" alt="">
+      </a>
+      <div class="container main-page-content">
+        <div class="main-box-wrapper">
+          <div class="left-content">
+            <h1 class="main-title"><span class="hightlight">Luyện nói tiếng Anh 1-1</span> với giáo viên nước ngoài</h1>
+            <p class="description">Dành cho bé 6-13 tuổi</p>
+            <div class="box-icon">
+              <img src="./images/icon-bitu-1.png" class="icon-bitu-1" alt="">
+            </div>
+          </div>
+          <div class="right-content">
+            <div class="login-form-wrapper">
+              <div class="common-form-wrapper">
+                <div class="mask-background"></div>
+                <div class="form-content-wrapper">
+                  <form action="" method="" class="login-form">
+                    <div class="form-item-wrapper">
+                      <img src="./images/icon-phone.png" class="form-icon" alt="">
+                      <div class="prefix-phone-wrapper">
+                        <span>+84</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <g clip-path="url(#clip0_2852_9302)">
+                          <path d="M4 6L8 10L12 6" stroke="#1A202C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_2852_9302">
+                          <rect width="16" height="16" fill="white"/>
+                          </clipPath>
+                          </defs>
+                        </svg>
+
+                      </div>
+                      <input type="text" name="" value="" placeholder="Enter mobile phone" class="form-input">
+                    </div>
+                    <div class="form-item-wrapper">
+                      <img src="./images/icon-password.png" class="form-icon" alt="">
+                      <input type="text" name="" value="" placeholder="Password" class="form-input">
+                      <span class="icon-toggle-password">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                        <path d="M11.9996 18C17.3996 18 21.5996 13.35 23.3996 10.65C24.1496 9.6 24.1496 8.25 23.3996 7.2C21.5996 4.65 17.3996 0 11.9996 0C6.59961 0 2.39961 4.65 0.599609 7.35C-0.150391 8.4 -0.150391 9.75 0.599609 10.65C2.39961 13.35 6.59961 18 11.9996 18ZM11.9996 4.5C14.5496 4.5 16.4996 6.45 16.4996 9C16.4996 11.55 14.5496 13.5 11.9996 13.5C9.44961 13.5 7.49961 11.55 7.49961 9C7.49961 6.45 9.44961 4.5 11.9996 4.5Z" fill="#A0AEC0"/>
+                        <path d="M9.59961 9C9.59961 7.67452 10.6741 6.6 11.9996 6.6C13.3251 6.6 14.3996 7.67452 14.3996 9C14.3996 10.3255 13.3251 11.4 11.9996 11.4C10.6741 11.4 9.59961 10.3255 9.59961 9Z" fill="#A0AEC0"/>
+                        </svg>
+                      </span>
+                    </div>
+
+                    <div class="form-control-wrapper">
+                      <a href="#" title="" target="" class="btn-forgot-password">Forgot password?</a>
+                      <button class="common-btn btn-login">
+                        <img src="./images/icon-btn-1.png" class="icon-btn-1" alt="">
+                         <img src="./images/icon-btn-2.png" class="icon-btn-2" alt="">
+                        <span class="text-btn">Join</span>
+                      </button>
+                    </div>
+
+                    <div class="login-with-wrapper">
+                      <span class="block-title">Or log in with</span>
+                      <ul class="list-icon-login">
+                        <li class="icon-login-item">
+                          <a href="#">
+                            <img src="./images/iconLoginFacebook.png" class="icon-login-with" alt="">
+                          </a>
+                        </li>
+                         <li class="icon-login-item">
+                          <a href="#">
+                           <img src="./images/iconLoginGoogle.png" class="icon-login-with" alt="">
+                          </a>
+                        </li>
+                         <li class="icon-login-item">
+                          <a href="#">
+                            <img src="./images/iconLoginApple.png" class="icon-login-with" alt="">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                     <button class="common-btn btn-create-account">
+                        <img src="./images/icon-btn-1.png" class="icon-btn-1" alt="">
+                         <img src="./images/icon-btn-2.png" class="icon-btn-2" alt="">
+                        <span class="text-btn">Tạo tài khoản mới</span>
+                      </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="common-badge-wrapper">
+            <div class="back-background"></div>
+            <div class="front-background">
+              <span class="text-label">Đăng nhập</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

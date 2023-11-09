@@ -3,4 +3,241 @@
 @import "fonts";
 @import "mixins";
 
+.main-box-wrapper {
+  width: fit-content;
+  border-radius: 48px;
+  border: 1px solid #dad4cd;
+  background: #fff;
 
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px 20px 32px 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .left-content {
+    width: fit-content;
+    min-width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+  }
+
+  .main-title {
+    max-width: 530px;
+    text-align: center;
+    color: #9b461a;
+    font-family: Kanit Bold;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    margin-bottom: 16px;
+
+    .hightlight {
+      color: #ff6d03;
+    }
+  }
+
+  .description {
+    color: #1a202c;
+    font-family: Kanit Medium;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 16px;
+  }
+
+  .box-icon {
+    width: 279px;
+    height: 279px;
+    min-width: 279px;
+    flex-shrink: 0;
+    .icon-bitu-1 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .right-content {
+    width: fit-content;
+    margin-left: 50px;
+    .login-form-wrapper {
+      min-width: 500px;
+      max-width: 500px;
+      height: auto;
+      position: relative;
+      top: -20px;
+    }
+
+    .form-content-wrapper {
+      padding: 50px 38px 18px 38px;
+      position: relative;
+
+      .login-form {
+        width: 100%;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        .form-item-wrapper {
+          width: 100%;
+          border-radius: 1000px;
+          border: 1px solid #dad4cd;
+          background: #fff;
+          box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
+          display: flex;
+          align-items: center;
+          padding: 6px;
+          position: relative;
+          margin-bottom: 16px;
+
+          .form-icon {
+            min-width: 42px;
+            max-width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+          .prefix-phone-wrapper {
+            display: flex;
+            align-items: center;
+            padding: 0px 16px;
+            border-right: 1px solid #a0aec0;
+            color: var(--gray-900, #1a202c);
+            font-family: Kanit Regular;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            max-height: 28px;
+
+            span {
+              margin-right: 2px;
+            }
+          }
+
+          .form-input {
+            flex-grow: 1;
+            border: none;
+            position: relative;
+            padding: 0px 16px;
+            color: #1a202c;
+            font-family: Kanit Regular;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            &::placeholder {
+              color: #a0aec0;
+              font-family: Kanit Regular;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .icon-toggle-password {
+            position: absolute;
+            top: 12px;
+            right: 16px;
+          }
+        }
+
+        .form-control-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .btn-forgot-password {
+            color: var(--ff-6-d-03, #ff6d03);
+            font-family: Kanit;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+
+        .login-with-wrapper {
+          margin: 16px 0px;
+          width: 100%;
+          border-radius: 24px;
+          background: #f8e7cf;
+          box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.13) inset,
+            0px -1.5px 0px 0px rgba(255, 255, 255, 0.8) inset;
+          padding: 13px 0px 22px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .block-title {
+            color: var(--gray-900, #1a202c);
+            font-family: Kanit Regular;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: inline-block;
+            margin-bottom: 12px;
+          }
+
+          .list-icon-login {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon-login-item {
+              margin-right: 20px;
+
+              &:last-of-type {
+                margin-right: 0;
+              }
+              a {
+                img {
+                  display: block;
+                  min-width: 40px;
+                  max-width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                }
+              }
+            }
+          }
+        }
+
+        .btn-login {
+          color: #fff;
+          background-color: var(--ff-6-d-03, #ff6d03);
+        }
+
+        .btn-create-account {
+          display: block;
+          margin: auto;
+          color: var(--gray-900, #1a202c);
+          background: var(--ffb-700, #ffb700);
+        }
+      }
+    }
+  }
+}
+
+.sign-in-page-wrapper {
+  .common-badge-wrapper {
+    right: 140px;
+    z-index: 9999;
+    top: -30px;
+  }
+}

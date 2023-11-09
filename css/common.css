@@ -1,117 +1,38 @@
 /* -----------------------------------------------------------
-	font-face Circular Std
+	font-face kanit
 ----------------------------------------------------------- */
 @font-face {
-  font-family: "Circular Std";
-  src: url("../fonts/CircularStd-Book.otf");
+  font-family: "Kanit Light";
+  src: url("../fonts/Kanit-Light.ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Circular Std";
-  src: url("../fonts/CircularStd-Medium.otf");
-  font-weight: 500;
+  font-family: "Kanit Regular";
+  src: url("../fonts/Kanit-Regular.ttf");
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Circular Std";
-  src: url("../fonts/CircularStd-Bold.otf");
+  font-family: "Kanit Medium";
+  src: url("../fonts/Kanit-Medium.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kanit Bold";
+  src: url("../fonts/Kanit-Bold.ttf");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
-/* -----------------------------------------------------------
-	font-face SF Pro Rounded
------------------------------------------------------------ */
 @font-face {
-  font-family: "SF Pro Rounded Regular";
-  src: url("../fonts/SF-Pro-Rounded-Regular.otf");
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "SF Pro Rounded Medium";
-  src: url("../fonts/SF-Pro-Rounded-Medium.otf");
-  font-style: normal;
-  font-display: swap;
-  font-weight: 500;
-}
-@font-face {
-  font-family: "SF Pro Rounded";
-  src: url("../fonts/SF-Pro-Rounded-Black.otf");
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-}
-@font-face {
-  font-family: "SF Pro Rounded Black";
-  src: url("../fonts/SF-Pro-Rounded-Black.otf");
-  font-style: normal;
-  font-display: swap;
+  font-family: "Kanit ExtraBold";
+  src: url("../fonts/Kanit-ExtraBold.ttf");
   font-weight: bold;
-}
-@font-face {
-  font-family: SVN-Bango;
-  src: url("../fonts/SVN-Bango.otf");
   font-style: normal;
   font-display: swap;
-  font-weight: bold;
-}
-/* -----------------------------------------------------------
-	font-face BeVietnamPro
------------------------------------------------------------ */
-@font-face {
-  font-family: "BeVietnamPro-Light";
-  src: url("../fonts/BeVietnamPro-Light.ttf");
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "BeVietnamPro-Black";
-  src: url("../fonts/BeVietnamPro-Black.ttf");
-  font-style: normal;
-  font-display: swap;
-  font-weight: bold;
-}
-@font-face {
-  font-family: "BeVietnamPro-Bold";
-  src: url("../fonts/BeVietnamPro-Bold.ttf");
-  font-style: normal;
-  font-display: swap;
-  font-weight: 800;
-}
-@font-face {
-  font-family: "BeVietnamPro-Medium";
-  src: url("../fonts/BeVietnamPro-Medium.ttf");
-  font-style: normal;
-  font-display: swap;
-  font-weight: 500;
-}
-@font-face {
-  font-family: "BeVietnamPro-Regular";
-  src: url("../fonts/BeVietnamPro-Regular.ttf");
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Ephesis-Regular";
-  src: url("../fonts/Ephesis-Regular.ttf");
-  font-style: normal;
-  font-display: swap;
-  font-weight: normal;
-}
-/* -----------------------------------------------------------
-	font-face 
------------------------------------------------------------ */
-@font-face {
-  font-family: "SVN-Anastasia";
-  src: url("../fonts/SVN-Anastasia.ttf");
-  font-style: normal;
-  font-display: swap;
-  font-weight: normal;
 }
 /* -----------------------------------------------------------
 	common
@@ -137,7 +58,7 @@ h6, br, hr {
 }
 
 body {
-  font-family: "Circular Std", serif;
+  font-family: Kanit Regular;
   color: #1a202c;
 }
 
@@ -246,6 +167,145 @@ a {
   z-index: 9999;
   top: 0;
   left: 0;
+}
+
+.header-logo {
+  position: fixed;
+  top: 24px;
+  left: 40px;
+  text-decoration: none;
+}
+.header-logo .header-logo-image {
+  width: 157.885px;
+  height: 44px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.main-page-content {
+  margin-top: 60px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.common-badge-wrapper {
+  min-width: 259px;
+  width: 259px;
+  height: 69px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.common-badge-wrapper .back-background {
+  width: 100%;
+  height: 30px;
+  background-color: #9E4300;
+  border-top: none;
+  border-left: 4px solid #ccc;
+  border-right: 4px solid #ccc;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.common-badge-wrapper .front-background {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/front-badge-image.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  color: #FFF;
+  font-family: Kanit Bold;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  position: absolute;
+}
+.common-badge-wrapper .front-background .text-label {
+  position: relative;
+  top: -8px;
+}
+
+.common-form-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 48px;
+  border: 1px solid #E4D3BC;
+  background: #FFF1DE;
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+.common-form-wrapper::before {
+  width: 100%;
+  height: 80px;
+  content: "";
+  background-image: url("../images/mask-background-1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.common-form-wrapper .form-content-wrapper {
+  width: 100%;
+  min-height: max-content;
+  position: relative;
+  z-index: 9999;
+}
+
+.common-btn {
+  min-width: max-content;
+  max-width: max-content;
+  padding: 8px 32px;
+  border-radius: 1000px;
+  cursor: pointer;
+  border: 1.5px solid #953F00;
+  background: var(--ff-6-d-03, #FF6D03);
+  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15), 0px 3px 0px 0px #FF8B03 inset, 0px -3px 0px 0px #FF8B03 inset;
+  color: #FFF;
+  font-family: Kanit Bold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+}
+.common-btn:focus {
+  outline: none;
+}
+.common-btn .icon-btn-1 {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  min-width: 7.341px;
+  height: 17.171px;
+  transform: rotate(20deg);
+}
+.common-btn .icon-btn-2 {
+  position: absolute;
+  left: 8px;
+  bottom: 4px;
+  min-width: 10.703px;
+  height: 11.56px;
+  transform: rotate(10deg);
+  flex-shrink: 0;
 }
 
 /*# sourceMappingURL=common.css.map */
