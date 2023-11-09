@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="css/slick.min.css">
   <link rel="stylesheet" type="text/css" href="css/common.css">
   <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/authen.css">
   <link rel="stylesheet" type="text/css" href="css/home.css">
 
 
