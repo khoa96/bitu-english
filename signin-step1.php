@@ -18,7 +18,6 @@
           <div class="right-content">
             <div class="login-form-wrapper">
               <div class="common-form-wrapper">
-                <div class="mask-background"></div>
                 <div class="form-content-wrapper">
                   <form action="" method="" class="login-form">
                     <div class="form-item-wrapper">
