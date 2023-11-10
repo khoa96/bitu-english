@@ -189,7 +189,7 @@ a {
 }
 
 .main-page-content {
-  margin-top: 120px;
+  margin-top: 140px;
   width: 100%;
   height: auto;
   display: flex;
@@ -197,9 +197,9 @@ a {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 1500px) {
+@media only screen and (max-width: 1599px) {
   .main-page-content {
-    margin-top: 60px;
+    margin-top: 85px;
   }
 }
 
@@ -211,6 +211,13 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+}
+@media only screen and (max-width: 1599px) {
+  .common-badge-wrapper {
+    min-width: 223px;
+    width: 223px;
+    height: 56px;
+  }
 }
 .common-badge-wrapper .back-background {
   width: 100%;
@@ -248,9 +255,26 @@ a {
   letter-spacing: -0.64px;
   position: absolute;
 }
+@media only screen and (max-width: 1599px) {
+  .common-badge-wrapper .front-background {
+    color: #FFF;
+    text-align: center;
+    font-family: Kanit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.48px;
+  }
+}
 .common-badge-wrapper .front-background .text-label {
   position: relative;
   top: -8px;
+}
+@media only screen and (max-width: 1599px) {
+  .common-badge-wrapper .front-background .text-label {
+    top: -4px;
+  }
 }
 
 .common-form-wrapper {
@@ -261,6 +285,14 @@ a {
   background: #FFF1DE;
   box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.06);
   position: relative;
+}
+@media only screen and (max-width: 1599px) {
+  .common-form-wrapper {
+    border-radius: 24px;
+    border: 1px solid #E4D3BC;
+    background: #FFF1DE;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.06);
+  }
 }
 .common-form-wrapper::before {
   width: 100%;
@@ -273,6 +305,12 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+}
+@media only screen and (max-width: 1599px) {
+  .common-form-wrapper::before {
+    height: 48px;
+    background-image: url("../images/mask-background-3.png");
+  }
 }
 .common-form-wrapper .form-content-wrapper {
   width: 100%;
@@ -300,6 +338,12 @@ a {
 }
 .common-btn:focus {
   outline: none;
+}
+@media only screen and (max-width: 1599px) {
+  .common-btn {
+    font-size: 20px;
+    padding: 9px 40px;
+  }
 }
 .common-btn .icon-btn-1 {
   position: absolute;

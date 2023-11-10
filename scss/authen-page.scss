@@ -15,6 +15,10 @@
   align-items: center;
   position: relative;
 
+  @include mq(max_xxl) {
+    border-radius: 32px;
+  }
+
   .left-content {
     width: fit-content;
     min-width: max-content;
@@ -36,6 +40,12 @@
     line-height: 56px;
     margin-bottom: 16px;
 
+    @include mq(max_xxl)  {
+      max-width: 400px;
+      font-size: 32px;
+      line-height: 44px;
+    }
+
     .hightlight {
       color: #ff6d03;
     }
@@ -49,6 +59,11 @@
     font-weight: 500;
     line-height: normal;
     margin-bottom: 16px;
+    
+    @include mq(max_xxl) {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
   }
 
   .box-icon {
@@ -56,6 +71,12 @@
     height: 279px;
     min-width: 279px;
     flex-shrink: 0;
+
+    @include mq(max_xxl) {
+      width: 254px;
+      height: 254px;
+      flex-shrink: 0;
+    }
     .icon-bitu-1 {
       width: 100%;
       height: 100%;
@@ -67,24 +88,33 @@
   .right-content {
     width: fit-content;
     margin-left: 50px;
+    @include mq(max_xxl) {
+      margin-left: 24px;
+    }
     .login-form-wrapper {
       min-width: 500px;
       max-width: 500px;
       height: auto;
       position: relative;
       top: -20px;
+
+      @include mq(max_xxl) {
+        min-width: 430px;
+        max-width: 430px;
+        top: 0;
+      }
     }
 
     .form-content-wrapper {
       padding: 50px 38px 18px 38px;
       position: relative;
 
+      @include mq(max_xxl) {
+        padding: 45px 32px 16px 32px;
+      }
+
       .login-form {
         width: 100%;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
         .form-item-wrapper {
           width: 100%;
           border-radius: 1000px;
@@ -103,6 +133,12 @@
             height: 42px;
             border-radius: 50%;
             object-fit: cover;
+
+            @include mq(max_xxl) {
+              min-width: 36px;
+              max-width: 36px;
+              height: 36px;
+            }
           }
           .prefix-phone-wrapper {
             display: flex;
@@ -116,15 +152,24 @@
             font-weight: 400;
             line-height: normal;
             max-height: 28px;
+            @include mq(max_xxl) {
+              font-size: 18px;
+              max-height: 24px;
+              padding: 0px 16px 0px 12px;
+            }
 
             span {
               margin-right: 2px;
             }
           }
 
-          .form-input {
+
+          .input-wrapper {
             flex-grow: 1;
+          }
+          .form-input {
             border: none;
+            width: 100%;
             position: relative;
             padding: 0px 16px;
             color: #1a202c;
@@ -143,6 +188,10 @@
             }
             &:focus {
               outline: none;
+            }
+
+            &[type="password"] {
+              padding-right: 40px;
             }
           }
 
@@ -165,6 +214,10 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+
+            @include mq(max_xxl) {
+              font-size: 18px;
+            }
           }
         }
 
@@ -180,6 +233,10 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
+
+          @include mq(max_xxl) {
+            padding: 16px 0px;
+          }
 
           .block-title {
             color: var(--gray-900, #1a202c);
@@ -246,12 +303,21 @@
   max-width: 1120px;
   height: auto;
 
+  @include mq(max_xxl) {
+     min-width: 864px;
+    max-width: 864px;
+  }
+
   .step2-content-detail {
     padding: 50px 0px 55px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @include mq(max_xxl) {
+      padding: 45px 0px 24px;
+    }
   }
   .common-form-wrapper {
     &::before {
@@ -266,6 +332,10 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+
+    @include mq(max_xxl) {
+      font-size: 24px;
+    }
   }
 
   .list-profile-wrapper {
@@ -275,9 +345,19 @@
     align-items: center;
     margin: 124px 0px 90px;
 
+    @include mq(max_xxl) {
+      margin: 24px 0px 32px;
+      flex-direction: column;
+    }
+
     .list-profile {
       display: flex;
       margin-right: 32px;
+
+      @include mq(max_xxl) {
+        margin-right: 0;
+        margin-bottom: 24px;
+      }
 
       .profile-item-wrapper {
         display: flex;
@@ -314,6 +394,11 @@
           justify-content: center;
           align-items: center;
           margin-bottom: 16px;
+          @include mq(max_xxl) {
+            width: 124px;
+            height: 124px;
+            margin-bottom: 12px;
+          }
         }
 
         .profile-item-name {
@@ -332,6 +417,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      @include mq(max_xxl) {
+        flex-direction: row;
+      }
 
       .btn-add-profile {
         cursor: pointer;
@@ -340,6 +428,9 @@
         border-radius: 50%;
         margin-bottom: 8px;
         border: none;
+        @include mq(max_xxl) {
+          margin-bottom: 0;
+        }
 
         img {
           min-width: 52px;
@@ -349,6 +440,12 @@
           height: 100%;
           object-fit: cover;
           border-radius: 50%;
+
+          @include mq(max_xxl) {
+            min-width: 48px;
+            max-width: 48px;
+            margin-right: 12px;
+          }
         }
       }
 
@@ -359,6 +456,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+
+        @include mq(max_xxl) {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -371,12 +472,20 @@
     font-weight: 600;
     line-height: normal;
     text-decoration-line: underline;
+
+    @include mq(max_xxl) {
+      font-size: 16px;
+    }
   }
 }
 
 .login-step3-block-wrapper {
   .common-badge-wrapper {
     right: calc((100% - 250px) / 2);
+
+    @include mq(max_xxl) {
+      right: calc((100% - 223px) / 2);
+    }
   }
 
   .step3-content-detail {
@@ -385,6 +494,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include mq(max_xxl) {
+      padding: 48px 0px 24px;
+    }
   }
 
   .top-block-wrapper {
@@ -405,6 +518,12 @@
         height: 44px;
         flex-shrink: 0;
         object-fit: cover;
+
+        @include mq(max_xxl) {
+          min-width: 95px;
+          height: 34px;
+          flex-shrink: 0;
+        }
       }
 
       .icon-logo-2 {
@@ -412,11 +531,21 @@
         height: 44px;
         flex-shrink: 0;
         object-fit: cover;
+
+        @include mq(max_xxl) {
+         min-width: 118px;
+        height: 32.884px;
+        flex-shrink: 0;
+        }
       }
     }
 
     .arrow-wrapper {
       margin: 0px 24px;
+
+      @include mq(max_xxl) {
+        margin: 0px 16px;
+      }
     }
   }
   .description {
@@ -430,6 +559,17 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+
+    @include mq(max_xxl) {
+      color: var(--gray-900, #1A202C);
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      max-width: 580px;
+      margin: 16px 0px 0px;
+    }
   }
 
   .btn-covert-account {
@@ -437,6 +577,10 @@
     background: var(--ff-6-d-03, #ff6d03);
     min-width: 196px;
     text-align: center;
+
+    @include mq(max_xxl) {
+      min-width: 143px;
+    }
   }
 
   .note {
@@ -452,6 +596,12 @@
     background: #f1e0c9;
     margin: 24px 0px 48px;
     padding: 13px 26px 14px 18px;
+
+    @include mq(max_xxl) {
+      max-width: 725px;
+      margin: 16px 0px 16px;
+      padding: 14px 22px;
+    }
   }
 
   .btn-cancel {
@@ -463,5 +613,16 @@
     font-weight: 400;
     line-height: normal;
     text-decoration-line: underline;
+
+    @include mq(max_xxl) {
+      color: var(--gray-900, #1A202C);
+      font-family: Kanit;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration-line: underline;
+      margin-top: 16px;
+    }
   }
 }

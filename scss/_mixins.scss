@@ -5,7 +5,10 @@
 //----------------------------------------------//
 @mixin mq($device, $val: null, $val2: null) {
   // min-width
-  @if $device == xxl {
+  @if $device == xxxl {
+     @media only screen and (min-width: $xxxl) { @content; }
+  } 
+  @else if $device == xxl {
     @media only screen and (min-width: $xxl) { @content; }
   } @else if $device == xl {
     @media only screen and (min-width: $xl) { @content; }
@@ -27,6 +30,8 @@
     @media only screen and (max-width: ($xl - 1px)) { @content; }
   } @else if $device == max_xl {
     @media only screen and (max-width: ($xxl - 1px)) { @content; }
+  } @else if $device == max_xxl {
+    @media only screen and (max-width: ($xxxl - 1px)) { @content; }
 
     // other
   } @else if $device == min_w {
