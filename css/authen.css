@@ -15,6 +15,12 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "Kanit";
+  src: url("../fonts/Kanit-Regular.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "Kanit Medium";
   src: url("../fonts/Kanit-Medium.ttf");
   font-style: normal;
@@ -178,7 +184,7 @@
 }
 .main-box-wrapper .right-content .form-content-wrapper .login-form .form-control-wrapper .btn-forgot-password {
   color: var(--ff-6-d-03, #ff6d03);
-  font-family: Kanit;
+  font-family: Kanit Regular;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -309,7 +315,7 @@
 }
 .step2-content-wrapper .list-profile-wrapper .list-profile .profile-item-wrapper .profile-item-name {
   color: var(--gray-900, #1a202c);
-  font-family: Kanit;
+  font-family: Kanit Regular;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
