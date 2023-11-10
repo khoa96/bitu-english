@@ -366,7 +366,7 @@
   right: calc((100% - 250px) / 2);
 }
 .login-step3-block-wrapper .step3-content-detail {
-  padding: 74px 0px 120px;
+  padding: 50px 0px 46px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -381,8 +381,8 @@
 .login-step3-block-wrapper .top-block-wrapper .logo-wrapper {
   min-width: max-content;
   border-radius: 48px;
-  border: 1px solid #DAD4CD;
-  background: #FFF;
+  border: 1px solid #dad4cd;
+  background: #fff;
   padding: 10px 18px;
 }
 .login-step3-block-wrapper .top-block-wrapper .logo-wrapper .icon-logo-1 {
@@ -404,7 +404,7 @@
   margin: 24px 0px 48px;
   max-width: 770px;
   text-align: center;
-  color: var(--gray-900, #1A202C);
+  color: var(--gray-900, #1a202c);
   text-align: center;
   font-family: Kanit Bold;
   font-size: 32px;
@@ -414,21 +414,33 @@
 }
 .login-step3-block-wrapper .btn-covert-account {
   color: #fff;
-  background: var(--ff-6-d-03, #FF6D03);
+  background: var(--ff-6-d-03, #ff6d03);
   min-width: 196px;
   text-align: center;
 }
 .login-step3-block-wrapper .note {
+  max-width: 750px;
+  color: #957d5b;
+  text-align: center;
+  font-family: Kanit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 16px;
+  background: #f1e0c9;
+  margin: 24px 0px 48px;
+  padding: 13px 26px 14px 18px;
+}
+.login-step3-block-wrapper .btn-cancel {
+  margin-top: 32px;
   color: var(--gray-900, #1A202C);
-  margin-top: 24px;
-  max-width: 560px;
-  text-align: center;
-  text-align: center;
-  font-family: Kanit Regular;
+  font-family: Kanit;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-decoration-line: underline;
 }
 
 /*# sourceMappingURL=authen.css.map */

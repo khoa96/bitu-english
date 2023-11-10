@@ -26,25 +26,30 @@
                     <div class="arrow-wrapper">
                       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                         <g clip-path="url(#clip0_2903_20126)">
-                          <path d="M11.666 11.666L19.9993 19.9993L11.666 28.3327" stroke="#FF6D03" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M21.666 11.666L29.9993 19.9993L21.666 28.3327" stroke="#FF6D03" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M11.666 11.666L19.9993 19.9993L11.666 28.3327" stroke="#FF6D03" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M21.666 11.666L29.9993 19.9993L21.666 28.3327" stroke="#FF6D03" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" />
                         </g>
                         <defs>
                           <clipPath id="clip0_2903_20126">
-                            <rect width="40" height="40" fill="white"/>
+                            <rect width="40" height="40" fill="white" />
                           </clipPath>
                         </defs>
                       </svg>
                     </div>
 
-                     <div class="logo-wrapper">
+                    <div class="logo-wrapper">
                       <img src="./images/icon-logo-2.png" class="icon-logo-2" alt="">
-                     </div>
+                    </div>
                   </div>
 
                   <p class="description">
-                    Tài khoản hiện đã có trên Bitu, bạn có chuyển đổi tài khoản sang thành tài khoản Kids?
+                    Bitu hiện đã ra mắt hệ thống riêng dành cho bé. Hãy chuyển đổi sang BITU KIDS để dễ dàng sử dụng và
+                    quản lý việc học tập của con
                   </p>
+                  <p class="note">Lưu ý: Tài khoản sau khi chuyển đổi sẽ được tạo sẵn 1 hồ sơ phụ huynh và 1 hồ sơ cho
+                    bé: bao gồm đẩy đủ thông tin về buổi học, lịch sử học của tài khoản được giữ nguyên.</p>
 
                   <button class="common-btn btn-covert-account">
                     <img src="./images/icon-btn-1.png" class="icon-btn-1" alt="">
@@ -52,8 +57,8 @@
                     <span class="text-btn">Chuyển đổi</span>
                   </button>
 
-                  <p class="note">Lưu ý:  Tài khoản sau khi chuyển đổi sẽ được tạo sẵn 1 hồ sơ phụ huynh và 1 hồ sơ cho bé: bao gồm đẩy đủ thông tin về buổi học, lịch sử học của tài khoản được giữ nguyên.</p>
-              </div>
+                  <a href="#" target="" title="" class="btn-cancel">Bỏ qua</a>
+                </div>
               </div>
             </div>
           </div>
