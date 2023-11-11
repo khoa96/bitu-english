@@ -1,0 +1,336 @@
+/* -----------------------------------------------------------
+	font-face kanit
+----------------------------------------------------------- */
+@font-face {
+  font-family: "Kanit Light";
+  src: url("../fonts/Kanit-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kanit Regular";
+  src: url("../fonts/Kanit-Regular.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kanit";
+  src: url("../fonts/Kanit-Regular.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kanit Medium";
+  src: url("../fonts/Kanit-Medium.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kanit Bold";
+  src: url("../fonts/Kanit-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kanit ExtraBold";
+  src: url("../fonts/Kanit-ExtraBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.home-page-wrapper {
+  display: unset !important;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.home-page-content-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.home-header-wrapper {
+  width: 100%;
+  padding: 24px 40px;
+}
+@media only screen and (max-width: 1599px) {
+  .home-header-wrapper {
+    padding: 16px 24px;
+  }
+}
+
+.home-header-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-header-content-wrapper .logo-header {
+  width: 157.885px;
+  height: 44px;
+  flex-shrink: 0;
+  min-width: 143.533px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 1599px) {
+  .home-header-content-wrapper .logo-header {
+    max-width: 143.533px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+}
+.home-header-content-wrapper .main-menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+.home-header-content-wrapper .main-menu .header-btn {
+  color: #1a202c;
+  font-family: Kanit Medium;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 6px 20px;
+  border-radius: 1000px;
+  margin-right: 16px;
+  border: 1.5px solid var(--gray-600, #718096);
+  background: var(--gray-400, #cbd5e0);
+  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15), 0px 3px 0px 0px #c0cddf inset, 0px -3px 0px 0px #c0cddf inset;
+}
+.home-header-content-wrapper .main-menu .header-btn:last-child {
+  margin-right: 0;
+}
+@media only screen and (max-width: 1599px) {
+  .home-header-content-wrapper .main-menu .header-btn {
+    font-size: 16px;
+  }
+}
+.home-header-content-wrapper .main-menu .active {
+  border-radius: 1000px;
+  color: #fff;
+  border: 1.5px solid #953f00;
+  background: var(--ff-6-d-03, #ff6d03);
+  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15), 0px 3px 0px 0px #ff8b03 inset, 0px -3px 0px 0px #ff8b03 inset;
+}
+.home-header-content-wrapper .menu-setting-wrapper {
+  display: flex;
+  align-items: center;
+}
+.home-header-content-wrapper .menu-setting-wrapper .btn-rating-table {
+  color: var(--gray-900, #1a202c);
+  font-family: Kanit Medium;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media only screen and (max-width: 1599px) {
+  .home-header-content-wrapper .menu-setting-wrapper .btn-rating-table {
+    font-size: 16px;
+  }
+}
+.home-header-content-wrapper .menu-setting-wrapper .list-option {
+  display: flex;
+  align-items: center;
+  margin: 0px 24px;
+}
+.home-header-content-wrapper .menu-setting-wrapper .list-option .option-item {
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 1000px;
+  border: 0.5px solid #e2d7c7;
+  background: var(--white, #fff);
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-header-content-wrapper .menu-setting-wrapper .list-option .option-item:last-child {
+  margin-right: 0;
+}
+.home-header-content-wrapper .menu-setting-wrapper .list-option .option-item img {
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.home-header-content-wrapper .menu-setting-wrapper .user-info-wrapper {
+  display: flex;
+  align-items: center;
+}
+.home-header-content-wrapper .menu-setting-wrapper .user-info-wrapper .user-avatar {
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.home-header-content-wrapper .menu-setting-wrapper .user-info-wrapper .username {
+  color: var(--gray-900, #1a202c);
+  font-family: Kanit Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home-page-content-wrapper {
+  width: 100%;
+}
+
+.home-page-intro-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+}
+.home-page-intro-content .content-detail-wrapper .txt-title {
+  color: #ff6d03;
+  font-family: Kanit Bold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  margin-left: 20px;
+}
+.home-page-intro-content .content-detail-wrapper .list-class {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.home-page-intro-content .content-detail-wrapper .list-class .class-item {
+  min-width: 330px;
+  max-width: 330px;
+  height: 185px;
+  border-radius: 24px;
+  border: 1px solid #dad4cd;
+  background: #fff;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
+  margin-right: 24px;
+  padding: 18px 16px 47px 16px;
+  position: relative;
+}
+.home-page-intro-content .content-detail-wrapper .list-class .class-item:last-child {
+  margin-right: 0;
+}
+.home-page-intro-content .content-detail-wrapper .list-class .class-item .class-title-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.home-page-intro-content .content-detail-wrapper .list-class .class-item .class-title-block .icon-flag {
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+}
+.home-page-intro-content .content-detail-wrapper .list-class .class-item .class-title-block .class-title {
+  color: var(--gray-900, #1a202c);
+  font-family: Kanit Bold;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  min-width: max-content;
+}
+.home-page-intro-content .content-detail-wrapper .list-class .class-item .list-teacher {
+  display: flex;
+  justify-content: flex-end;
+}
+.home-page-intro-content .content-detail-wrapper .list-class .class-item .list-teacher .teacher-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+}
+.home-page-intro-content .content-detail-wrapper .list-class .class-item .list-teacher .teacher-item:last-child {
+  margin-right: 0;
+}
+.home-page-intro-content .content-detail-wrapper .list-class .class-item .list-teacher .teacher-item .teacher-image {
+  min-width: 56px;
+  max-width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  margin-bottom: 2px;
+  object-fit: cover;
+}
+.home-page-intro-content .content-detail-wrapper .list-class .class-item .list-teacher .teacher-item .teacher-name {
+  color: var(--gray-900, #1a202c);
+  text-align: center;
+  font-family: Kanit Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.home-page-intro-content .content-detail-wrapper .list-class .class-item .btn-view-teacher {
+  min-width: 95px;
+  color: #fff;
+  font-family: Kanit Medium;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 6px 28px !important;
+  position: absolute;
+  left: calc((100% - 95px) / 2);
+  bottom: -20px;
+}
+.home-page-intro-content .content-detail-wrapper .list-option {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.home-page-intro-content .content-detail-wrapper .list-option .option-item {
+  display: flex;
+  margin-bottom: 24px;
+  align-items: center;
+}
+.home-page-intro-content .content-detail-wrapper .list-option .option-item:last-child {
+  margin-bottom: 0;
+}
+.home-page-intro-content .content-detail-wrapper .list-option .option-item .icon-check {
+  min-width: 45px;
+  max-width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+.home-page-intro-content .content-detail-wrapper .list-option .option-item .txt-detail {
+  color: var(--gray-900, #1A202C);
+  font-family: Kanit Regular;
+  font-size: 18px;
+  font-style: normal;
+  max-width: 250px;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+
+.check-and-try-learn-block {
+  display: flex;
+  justify-content: space-between;
+}
+.check-and-try-learn-block .right-content {
+  position: relative;
+  top: -30px;
+  margin-bottom: -30px;
+}
+
+/*# sourceMappingURL=home.css.map */

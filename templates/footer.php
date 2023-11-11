@@ -1,11 +1,3 @@
-<footer class="main-footer">
-  <div class="container">
-    Footer Container
-  </div>
-</footer>
-<!-- /.main-footer -->
-
-
 <!-- JAVASCRIPT-->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>

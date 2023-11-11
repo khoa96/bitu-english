@@ -1,0 +1,331 @@
+@charset "utf-8";
+@import "variables";
+@import "fonts";
+@import "mixins";
+
+.home-page-wrapper {
+  display: unset !important;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.home-page-content-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.home-header-wrapper {
+  width: 100%;
+  padding: 24px 40px;
+
+  @include mq(max_xxl) {
+    padding: 16px 24px;
+  }
+}
+
+.home-header-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo-header {
+    width: 157.885px;
+    height: 44px;
+    flex-shrink: 0;
+    min-width: 143.533px;
+    object-fit: cover;
+
+    @include mq(max_xxl) {
+      max-width: 143.533px;
+      height: 40px;
+      flex-shrink: 0;
+    }
+  }
+
+  .main-menu {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+
+    .header-btn {
+      color: #1a202c;
+      font-family: Kanit Medium;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      padding: 6px 20px;
+      border-radius: 1000px;
+      margin-right: 16px;
+      border: 1.5px solid var(--gray-600, #718096);
+      background: var(--gray-400, #cbd5e0);
+      box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15),
+        0px 3px 0px 0px #c0cddf inset, 0px -3px 0px 0px #c0cddf inset;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @include mq(max_xxl) {
+        font-size: 16px;
+      }
+    }
+
+    .active {
+      border-radius: 1000px;
+      color: #fff;
+      border: 1.5px solid #953f00;
+      background: var(--ff-6-d-03, #ff6d03);
+      box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15),
+        0px 3px 0px 0px #ff8b03 inset, 0px -3px 0px 0px #ff8b03 inset;
+    }
+  }
+
+  .menu-setting-wrapper {
+    display: flex;
+    align-items: center;
+
+    .btn-rating-table {
+      color: var(--gray-900, #1a202c);
+      font-family: Kanit Medium;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+
+      @include mq(max_xxl) {
+        font-size: 16px;
+      }
+    }
+
+    .list-option {
+      display: flex;
+      align-items: center;
+      margin: 0px 24px;
+      .option-item {
+        min-width: 40px;
+        max-width: 40px;
+        height: 40px;
+        border-radius: 1000px;
+        border: 0.5px solid #e2d7c7;
+        background: var(--white, #fff);
+        box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.1);
+        margin-right: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        img {
+          min-width: 24px;
+          max-width: 24px;
+          height: 24px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .user-info-wrapper {
+      display: flex;
+      align-items: center;
+
+      .user-avatar {
+        min-width: 40px;
+        max-width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+
+      .username {
+        color: var(--gray-900, #1a202c);
+        font-family: Kanit Regular;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+.home-page-content-wrapper {
+  width: 100%;
+}
+
+.home-page-intro-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+
+  .content-detail-wrapper {
+    
+      .txt-title {
+        color: #ff6d03;
+        font-family: Kanit Bold;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.48px;
+        margin-left: 20px;
+
+        @include mq(max_xxl) {
+          // font-size: 20px;
+          // margin-left: 16px;
+        }
+      }
+    .list-class {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      .class-item {
+        min-width: 330px;
+        max-width: 330px;
+        height: 185px;
+        border-radius: 24px;
+        border: 1px solid #dad4cd;
+        background: #fff;
+        box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
+        margin-right: 24px;
+        padding: 18px 16px 47px 16px;
+        position: relative;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .class-title-block {
+          display: flex;
+          align-items: center;
+          margin-bottom: 12px;
+
+          .icon-flag {
+            min-width: 24px;
+            max-width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 8px;
+          }
+          .class-title {
+            color: var(--gray-900, #1a202c);
+            font-family: Kanit Bold;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.36px;
+                    min-width: max-content;
+          }
+        }
+
+        .list-teacher {
+          display: flex;
+          justify-content: flex-end;
+          .teacher-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 24px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            .teacher-image {
+              min-width: 56px;
+              max-width: 56px;
+              height: 56px;
+              flex-shrink: 0;
+              border-radius: 8px;
+              margin-bottom: 2px;
+              object-fit: cover;
+            }
+
+            .teacher-name {
+              color: var(--gray-900, #1a202c);
+              text-align: center;
+              font-family: Kanit Regular;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+        }
+
+        .btn-view-teacher {
+          min-width: 95px;
+          color: #fff;
+          font-family: Kanit Medium;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          padding: 6px 28px !important;
+          position: absolute;
+          left: calc((100% - 95px) / 2);
+          bottom: -20px
+        }
+      }
+    }
+
+    .list-option {
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      .option-item {
+        display: flex;
+        margin-bottom: 24px;
+        align-items: center;
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .icon-check {
+          min-width: 45px;
+          max-width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-right:12px;
+        }
+
+        .txt-detail {
+          color: var(--gray-900, #1A202C);
+          font-family: Kanit Regular;
+          font-size: 18px;
+          font-style: normal;
+          max-width: 250px;
+          font-weight: 400;
+          line-height: 24px; /* 133.333% */
+        }
+      }
+    }
+  }
+}
+
+
+.check-and-try-learn-block {
+  display: flex;
+  justify-content: space-between;
+
+  .right-content {
+    position: relative;
+    top: -30px;
+    margin-bottom: -30px;;
+  }
+}

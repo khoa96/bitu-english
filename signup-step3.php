@@ -105,6 +105,10 @@
           <div class="avatar-item"></div>
           <div class="avatar-item"></div>
           <div class="avatar-item"></div>
+           <div class="avatar-item"></div>
+          <div class="avatar-item"></div>
+          <div class="avatar-item"></div>
+            <div class="avatar-item"></div>
           <div class="avatar-item"></div>
         </div>
       </div>
