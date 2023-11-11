@@ -649,25 +649,30 @@ a {
   box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
   padding: 8px;
 }
-.common-topic-item.normal-topic .topic-header {
+.common-topic-item.small-topic .topic-header {
   width: 100%;
   height: 120px;
   border-radius: 18px;
   object-fit: cover;
 }
-.common-topic-item.big-topic .topic-header {
+.common-topic-item.normal-topic .topic-header {
   width: 100%;
   height: 156px;
+  border-radius: 18px;
+}
+.common-topic-item.big-topic .topic-header {
+  width: 100%;
+  height: 162px;
   border-radius: 18px;
 }
 .common-topic-item .topic-image {
   width: 100%;
   height: 100%;
   border-radius: 18px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .common-topic-item .topic-content {
-  padding: 12px 8px 0px;
+  padding: 12px 8px 8px;
 }
 .common-topic-item .topic-content .topic-title {
   color: var(--gray-900, #1a202c);
@@ -708,7 +713,7 @@ a {
   line-height: normal;
 }
 .common-topic-item .topic-content .topic-footer .btn-join-topic {
-  min-width: 85px;
+  min-width: 95px;
   padding: 6px 25px;
   color: #fff;
   font-family: Kanit Bold;
@@ -757,6 +762,7 @@ a {
 }
 .common-control-roadmap.btn-prev .icon-arrow {
   margin-right: 12px;
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=common.css.map */

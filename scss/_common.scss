@@ -636,7 +636,7 @@ a {
   box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
   padding: 8px;
 
-  &.normal-topic {
+  &.small-topic {
     .topic-header {
       width: 100%;
       height: 120px;
@@ -645,10 +645,17 @@ a {
     }
   }
 
-  &.big-topic {
+  &.normal-topic {
     .topic-header {
       width: 100%;
       height: 156px;
+      border-radius: 18px;
+    }
+  }
+  &.big-topic {
+    .topic-header {
+      width: 100%;
+      height: 162px;
       border-radius: 18px;
     }
   }
@@ -657,10 +664,10 @@ a {
     width: 100%;
     height: 100%;
     border-radius: 18px;
-    object-fit: cover;
+    object-fit: contain;
   }
   .topic-content {
-    padding: 12px 8px 0px;
+    padding: 12px 8px 8px;
     .topic-title {
       color: var(--gray-900, #1a202c);
       font-family: Kanit Bold;
@@ -706,7 +713,7 @@ a {
         }
       }
       .btn-join-topic {
-        min-width: 85px;
+        min-width: 95px;
         padding: 6px 25px;
         color: #fff;
         font-family: Kanit Bold;
@@ -760,9 +767,9 @@ a {
 
   &.btn-prev {
     flex-direction: row-reverse;
-
     .icon-arrow {
       margin-right: 12px;
+      transform: rotate(180deg);
     }
   }
 }
