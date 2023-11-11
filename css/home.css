@@ -193,6 +193,14 @@
   align-items: center;
   margin-top: 32px;
 }
+.home-page-intro-content .common-badge-wrapper .front-background {
+  font-size: 30px;
+}
+@media only screen and (max-width: 1599px) {
+  .home-page-intro-content .common-badge-wrapper .front-background {
+    font-size: 24px;
+  }
+}
 .home-page-intro-content .content-detail-wrapper .txt-title {
   color: #ff6d03;
   font-family: Kanit Bold;

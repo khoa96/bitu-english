@@ -167,6 +167,16 @@
   align-items: center;
   margin-top: 32px;
 
+  .common-badge-wrapper {
+    .front-background {
+      font-size: 30px;
+
+      @include mq(max_xxl) {
+        font-size: 24px;
+      }
+    }
+  }
+
   .content-detail-wrapper {
     
       .txt-title {
