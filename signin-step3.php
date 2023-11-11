@@ -14,7 +14,7 @@
               <span class="text-label">Đăng nhập</span>
             </div>
           </div>
-          <div class="step2-content-wrapper">
+          <div class="common-content-detail-wrapper">
             <div class="common-form-wrapper">
               <div class="form-content-wrapper">
                 <div class="step3-content-detail">

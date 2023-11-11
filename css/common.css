@@ -58,7 +58,9 @@ p,
 ul,
 ol,
 li,
-h6, br, hr {
+h6,
+br,
+hr {
   margin: 0;
   padding: 0;
 }
@@ -89,7 +91,8 @@ button,
   list-style: none !important;
 }
 
-ul, ol {
+ul,
+ol {
   list-style-type: none;
 }
 
@@ -174,6 +177,14 @@ a {
   top: 0;
   left: 0;
 }
+@media (min-width: 1900px) {
+  .background-common .page-content-wrapper-common {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .header-logo {
   position: fixed;
@@ -202,6 +213,11 @@ a {
     margin-top: 85px;
   }
 }
+@media (min-width: 1900px) {
+  .main-page-content {
+    margin-top: 0;
+  }
+}
 
 .common-badge-wrapper {
   min-width: 259px;
@@ -209,14 +225,15 @@ a {
   height: 69px;
   flex-shrink: 0;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -30px;
+  right: calc((100% - 250px) / 2);
 }
 @media only screen and (max-width: 1599px) {
   .common-badge-wrapper {
     min-width: 223px;
     width: 223px;
     height: 56px;
+    right: calc((100% - 223px) / 2);
   }
 }
 .common-badge-wrapper .back-background {
@@ -308,7 +325,6 @@ a {
 }
 @media only screen and (max-width: 1599px) {
   .common-form-wrapper::before {
-    height: 48px;
     background-image: url("../images/mask-background-3.png");
   }
 }
@@ -324,6 +340,8 @@ a {
   max-width: max-content;
   padding: 8px 32px;
   border-radius: 1000px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   border: 1.5px solid #953F00;
   background: var(--ff-6-d-03, #FF6D03);
@@ -361,6 +379,219 @@ a {
   height: 11.56px;
   transform: rotate(10deg);
   flex-shrink: 0;
+}
+
+.common-signup-step-block-wrapper {
+  width: 100%;
+  height: 600px;
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+@media only screen and (max-width: 1599px) {
+  .common-signup-step-block-wrapper {
+    height: 430px;
+    padding-top: 46px;
+  }
+}
+
+.common-signup-step-title {
+  color: var(--gray-900, #1A202C);
+  font-family: Kanit Bold;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media only screen and (max-width: 1599px) {
+  .common-signup-step-title {
+    font-size: 24px;
+  }
+}
+
+.common-signup-step-input-wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 1000px;
+  border: 1px solid #DAD4CD;
+  background: #FFF;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
+  padding: 7px;
+  padding-right: 16px;
+  min-width: 424px;
+}
+.common-signup-step-input-wrapper .icon-signup-step {
+  min-width: 42px;
+  max-width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 1599px) {
+  .common-signup-step-input-wrapper .icon-signup-step {
+    min-width: 36px;
+    max-width: 36px;
+    height: 36px;
+  }
+}
+.common-signup-step-input-wrapper .input-signup-step {
+  flex-grow: 1;
+  border: none;
+  margin-left: 16px;
+  cursor: pointer;
+  color: #1A202C;
+  font-family: Kanit Medium;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media only screen and (max-width: 1599px) {
+  .common-signup-step-input-wrapper .input-signup-step {
+    margin-left: 12px;
+  }
+}
+.common-signup-step-input-wrapper .input-signup-step:focus {
+  outline: none;
+}
+.common-signup-step-input-wrapper .input-signup-step::placeholder {
+  color: var(--gray-500, #A0AEC0);
+  font-family: Kanit Medium;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media only screen and (max-width: 1599px) {
+  .common-signup-step-input-wrapper .input-signup-step::placeholder {
+    font-size: 18px;
+  }
+}
+
+.common-block-signup-step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.common-block-signup-step .common-signup-step-title {
+  margin-bottom: 8px;
+}
+
+.control-step-wrapper {
+  position: absolute;
+  width: fit-content;
+  right: 44px;
+  bottom: 44px;
+}
+@media only screen and (max-width: 1599px) {
+  .control-step-wrapper {
+    right: 32px;
+    bottom: 32px;
+  }
+}
+.control-step-wrapper .btn-next-step {
+  min-width: 120px;
+}
+
+.popup {
+  position: fixed;
+  z-index: -100;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popup__close {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1599px) {
+  .popup__close {
+    top: 24px;
+    right: 24px;
+  }
+}
+
+.popup__body {
+  position: relative;
+  max-width: 790px;
+  min-width: 790px;
+  border-radius: 48px;
+  padding: 24px 12px 24px 32px;
+  min-height: max-content;
+  border: 1px solid #DAD4CD;
+  background: #FFF1DE;
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 991px) {
+  .popup__body {
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    padding: 24px;
+  }
+}
+
+.popup-content .txt-title {
+  color: var(--gray-900, #1A202C);
+  font-family: Kanit;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.popup-content .list-avatar {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 520px;
+  overflow-y: auto;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+.popup-content .list-avatar::-webkit-scrollbar {
+  width: 5px;
+}
+.popup-content .list-avatar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.popup-content .list-avatar::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 5px;
+}
+.popup-content .list-avatar .avatar-item {
+  min-width: 158px;
+  max-width: 158px;
+  height: 158px;
+  border-radius: 100px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  border: 1px solid #DAD4CD;
+  background: #FFF;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.popup-content .list-avatar .avatar-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.popup--show {
+  z-index: 99999999;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=common.css.map */
