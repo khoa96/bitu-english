@@ -15,12 +15,11 @@
   height: auto;
 
   @media (min-width: 1600px) {
-  position: absolute;
-		  left: 50%;
-		  top: 50%;
-		  transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
-
 }
 
 .home-header-wrapper {
@@ -186,22 +185,21 @@
   }
 
   .content-detail-wrapper {
-    
-      .txt-title {
-        color: #ff6d03;
-        font-family: Kanit Bold;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        letter-spacing: -0.48px;
-        margin-left: 20px;
+    .txt-title {
+      color: #ff6d03;
+      font-family: Kanit Bold;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.48px;
+      margin-left: 20px;
 
-        @include mq(max_xxl) {
-          // font-size: 20px;
-          // margin-left: 16px;
-        }
+      @include mq(max_xxl) {
+        // font-size: 20px;
+        // margin-left: 16px;
       }
+    }
     .list-class {
       width: 100%;
       display: flex;
@@ -244,7 +242,7 @@
             font-weight: 600;
             line-height: normal;
             letter-spacing: -0.36px;
-                    min-width: max-content;
+            min-width: max-content;
           }
         }
 
@@ -295,7 +293,7 @@
           padding: 6px 28px !important;
           position: absolute;
           left: calc((100% - 95px) / 2);
-          bottom: -20px
+          bottom: -20px;
         }
       }
     }
@@ -319,11 +317,11 @@
           height: 45px;
           border-radius: 50%;
           object-fit: cover;
-          margin-right:12px;
+          margin-right: 12px;
         }
 
         .txt-detail {
-          color: var(--gray-900, #1A202C);
+          color: var(--gray-900, #1a202c);
           font-family: Kanit Regular;
           font-size: 18px;
           font-style: normal;
@@ -336,7 +334,6 @@
   }
 }
 
-
 .check-and-try-learn-block {
   display: flex;
   justify-content: space-between;
@@ -344,6 +341,314 @@
   .right-content {
     position: relative;
     top: -20px;
-    margin-bottom: -20px;;
+    margin-bottom: -20px;
+  }
+}
+
+.roadmap-home-page-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.page-roadmap-content-wrapper {
+  width: 920.452px;
+  height: 397.423px;
+  flex-shrink: 0;
+  margin: auto;
+  background-image: url("../images/image-roadmap-2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  left: 156px;
+
+  @include mq(max_xxl) {
+    width: 856px;
+    height: 353px;
+    flex-shrink: 0;
+    background-image: url("../images/image-roadmap-1.png");
+    left: 124px;
+  }
+
+  .row-item {
+    width: 100%;
+    height: calc(100% / 3);
+    display: flex;
+    position: relative;
+
+    .row-content {
+      width: calc(100% - 100px);
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &:nth-child(2) {
+      justify-content: flex-end;
+      align-items: center;
+      left: 90px;
+      .level-item {
+        .icon-lock {
+          right: -47px;
+        }
+
+        .tooltip-block-wrapper {
+          left: -220%;
+          top: 0;
+        }
+      }
+    }
+
+    &:first-child,
+    &:last-child {
+      left: -156px;
+
+      @include mq(max_xxl) {
+        left: -124px !important;
+      }
+    }
+
+    &:first-child {
+      top: -90px;
+      left: -38px;
+
+      @include mq(max_xxl) {
+        top: -60px;
+        left: -94px !important;
+      }
+      .level-item {
+        &:first-child {
+          .icon-lock {
+            right: -38px;
+          }
+        }
+        &:nth-child(2) {
+          .icon-lock {
+            right: -47px;
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      top: 0;
+      left: -156px;
+
+      .level-item {
+        &:first-child {
+          top: -60px;
+        }
+
+        &:nth-child(2) {
+          .icon-lock {
+            right: -47px;
+          }
+        }
+      }
+    }
+  }
+
+  .level-item {
+    min-width: 156px;
+    max-width: 156px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    @include mq(max_xxl) {
+      min-width: 124px;
+      max-width: 124px;
+    }
+
+    &.disabled {
+      .image-level {
+        filter: grayscale(100%);
+      }
+    }
+
+    .name-level {
+      padding: 4px 16px;
+      border-radius: 1000px;
+      border: 1.5px solid #989187;
+      background: #fffbf5;
+      box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15);
+      color: var(--gray-900, #1a202c);
+      text-align: center;
+      font-family: Kanit Bold;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.36px;
+      min-width: max-content;
+
+      @include mq(max_xxl) {
+        color: var(--gray-900, #1a202c);
+        text-align: center;
+        font-family: Kanit Bold;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.32px;
+      }
+    }
+
+    .image-level-wrapper {
+      margin-top: 16px;
+      width: 100%;
+      height: 156px;
+      position: relative;
+
+      @include mq(max_xxl) {
+        height: 124px;
+      }
+
+      .image-level {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .icon-lock {
+        position: absolute;
+        right: -20px;
+        top: -20px;
+        display: flex;
+        width: 47.25px;
+        height: 46.6px;
+        object-fit: cover;
+
+        @include mq(max_xxl) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+
+    .list-star {
+      display: flex;
+      margin-top: 6px;
+
+      .star-item {
+        min-width: 22px;
+        max-width: 22px;
+        height: 22px;
+
+        @include mq(max_xxl) {
+          min-width: 20px;
+          max-width: 20px;
+          height: 20px;
+        }
+
+        .star-image {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .tooltip-block-wrapper {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      z-index: 99999;
+      border-radius: 24px;
+      border: 1px solid #dad4cd;
+      background: #fff;
+      box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.1);
+      padding: 20px 6px 12px 20px;
+      min-width: 350px;
+      max-width: 350px;
+      height: auto;
+      display: none;
+      transition: all ease 0.2s;
+
+      .tooltip-title {
+        color: var(--gray-900, #1a202c);
+        font-family: Kanit Bold;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 6px;
+    
+
+        @include mq(max_xxl) {
+          font-size: 20px;
+          margin-bottom: 8px;
+        }
+      }
+
+      .list-target {
+        width: 100%;
+        padding-right: 8px;
+        max-height: 180px;
+        overflow-y: auto;
+
+        /* width */
+        &::-webkit-scrollbar {
+          width: 5px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+          background: #f1f1f1;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: #ccc;
+          border-radius: 5px;
+        }
+
+        .target-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 8px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .icon-check {
+            min-width: 24px;
+            max-width: 24px;
+            height: 24px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 12px;
+          }
+
+          .txt-target {
+            max-width: 270px;
+            color: var(--gray-900, #1a202c);
+            font-family: Kanit Regular;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            @include mq(max_xxl) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .tooltip-block-wrapper {
+        display: block;
+      }
+    }
   }
 }

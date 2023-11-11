@@ -92,7 +92,7 @@
               <div class="left-content">
                 <div class="title-block">
                   <img src="./images/icon-step-2.png" class="icon-step-1" alt="">
-                  <h3 class="txt-title">Kiểm tra và Học thử <span class="hight-light">MIỄN PHÍ</span></h3>
+                  <h3 class="txt-title">Kiểm tra và Học thử <span class="hightlight">MIỄN PHÍ</span></h3>
                 </div>
 
                 <ul class="list-option">

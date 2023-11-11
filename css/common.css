@@ -639,6 +639,9 @@ a {
   flex-shrink: 0;
   object-fit: cover;
 }
+.common-block-content .title-block .hightlight {
+  color: #A1CA38;
+}
 .common-block-content.review-template-class {
   padding: 50px 32px 45px 20px;
 }
