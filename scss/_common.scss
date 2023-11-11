@@ -606,7 +606,7 @@ a {
 
   @include mq(max_xxl) {
     border-radius: 32px;
-    padding: 45px 24px 32px 16px;
+    padding: 32px 24px 16px 16px;
     margin-bottom: 16px;
   }
   .title-block {
@@ -623,6 +623,15 @@ a {
         // height: 38.25px;
       }
     }
+  }
+
+  &.review-template-class {
+    padding: 50px 32px 45px 20px;
+  @include mq(max_xxl) {
+    border-radius: 32px;
+    padding: 32px 24px 45px 16px;
+    margin-bottom: 16px;
+  }
   }
 }
 
@@ -728,9 +737,10 @@ a {
 
 .common-control-roadmap {
   position: fixed;
-  top: calc((100vh - 72px) / 2);
-  right: 40px; 
+  top:  50%;
+  right: 40px;
   min-width: max-content;
+  max-width: max-content;
   padding: 14px;
   border-radius: 16px;
   border: 1px solid #dad4cd;
@@ -760,13 +770,14 @@ a {
   }
 
   &.btn-next {
-     .icon-arrow {
+    .icon-arrow {
       margin-left: 12px;
     }
   }
 
   &.btn-prev {
     flex-direction: row-reverse;
+    left: 40px;
     .icon-arrow {
       margin-right: 12px;
       transform: rotate(180deg);
