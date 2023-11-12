@@ -465,6 +465,20 @@
   flex-direction: column;
 }
 
+.roadmap-step-3-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.roadmap-step-3-wrapper .top-block-wrapper {
+  width: 100%;
+  display: flex;
+  margin-bottom: 130px;
+  justify-content: center;
+}
+
 .page-roadmap-content-wrapper {
   width: 920.452px;
   height: 397.423px;
@@ -521,11 +535,13 @@
 .page-roadmap-content-wrapper .row-item:first-child {
   top: -90px;
   left: -38px;
+  margin-bottom: -90px;
 }
 @media only screen and (max-width: 1599px) {
   .page-roadmap-content-wrapper .row-item:first-child {
     top: -60px;
     left: -94px !important;
+    margin-bottom: -60px;
   }
 }
 .page-roadmap-content-wrapper .row-item:first-child .level-item:first-child .icon-lock {
@@ -535,11 +551,13 @@
   right: -47px;
 }
 .page-roadmap-content-wrapper .row-item:last-child {
-  top: 0;
+  top: 60px;
   left: -156px;
+  margin-bottom: -60px;
 }
 .page-roadmap-content-wrapper .row-item:last-child .level-item:first-child {
   top: -60px;
+  margin-bottom: -60px;
 }
 .page-roadmap-content-wrapper .row-item:last-child .level-item:nth-child(2) .icon-lock {
   right: -47px;
@@ -1103,6 +1121,130 @@
     height: 88px;
     flex-shrink: 0;
   }
+}
+
+.room-page-wrapper {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.room-page-wrapper .room-header {
+  width: 100%;
+  background: #fff;
+  padding: 8px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1599px) {
+  .room-page-wrapper .room-header {
+    padding: 8px 32px;
+  }
+}
+.room-page-wrapper .room-header .left-header {
+  display: flex;
+  align-items: center;
+}
+.room-page-wrapper .room-header .left-header .icon-arrow {
+  width: 36px;
+  height: 33px;
+  flex-shrink: 0;
+}
+.room-page-wrapper .room-header .left-header .time {
+  margin: 0px 16px;
+  border-radius: 1000px;
+  border: 1.5px solid #989187;
+  background: #fffbf5;
+  color: var(--gray-900, #1a202c);
+  font-family: Kanit Regular;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 2px 13px 3px 12px;
+  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15);
+}
+.room-page-wrapper .room-header .left-header .description {
+  color: var(--gray-900, #1a202c);
+  font-family: Kanit Regular;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.room-page-wrapper .room-header .right-header {
+  list-style-type: none;
+  display: flex;
+}
+.room-page-wrapper .room-header .right-header .right-header-item {
+  display: flex;
+  padding: 4px 14px 4px 4px;
+  margin-right: 24px;
+  border-radius: 100px;
+  border: 1px solid #f8b805;
+  background: #fff6dc;
+  color: var(--ff-6-d-03, #ff6d03);
+  font-family: Kanit Medium;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media only screen and (max-width: 1599px) {
+  .room-page-wrapper .room-header .right-header .right-header-item {
+    font-size: 18px;
+  }
+}
+.room-page-wrapper .room-header .last-item {
+  margin-right: 0 !important;
+}
+.room-page-wrapper .room-header .right-header .right-header-item .icon-coin {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+@media only screen and (max-width: 1599px) {
+  .room-page-wrapper .room-header .right-header .right-header-item .icon-coin {
+    width: 32px;
+    height: 32px;
+  }
+}
+.room-page-wrapper .room-header .right-header .right-header-item .icon-cup {
+  width: 35.123px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+@media only screen and (max-width: 1599px) {
+  .room-page-wrapper .room-header .right-header .right-header-item .icon-cup {
+    width: 32px;
+    height: 32px;
+  }
+}
+.room-page-wrapper .room-body {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+}
+.room-page-wrapper .room-body .left-content {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f2ece4;
+}
+.room-page-wrapper .room-body .right-sidebar {
+  width: fit-content;
+  background: #fff;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 14px;
 }
 
 /*# sourceMappingURL=home.css.map */

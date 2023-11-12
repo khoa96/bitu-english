@@ -389,7 +389,6 @@
   </div>
   <?php include "templates/footer.php"; ?>
   <script src="js/collapse.js"></script>
-  <script></script>
   <script>
   $(function() {
     // PC

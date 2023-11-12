@@ -589,6 +589,9 @@ a {
   margin-bottom: 24px;
   border: 1px solid #dad4cd;
   background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
 }
 .popup-content .list-avatar .avatar-item:nth-child(4n) {
@@ -603,6 +606,16 @@ a {
     border: 1px solid #dad4cd;
     background: #fff;
     box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+.popup-content .list-avatar .avatar-item img {
+  width: 100%;
+  max-width: 132px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 1599px) {
+  .popup-content .list-avatar .avatar-item img {
+    max-width: 100px;
   }
 }
 
