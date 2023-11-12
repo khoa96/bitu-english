@@ -27,15 +27,16 @@
       </ul>
     </div>
     <div class="room-body">
-      <div class="left-content">s</div>
+      <div class="left-content">Content Page</div>
       <div class="right-sidebar">
         <ul class="list-menu">
-          <li class="menu-item"><img src="" alt=""></li>
-          <li class="menu-item"><img src="" alt=""></li>
-          <li class="menu-item"><img src="" alt=""></li>
-          <li class="menu-item"><img src="" alt=""></li>
-          <li class="menu-item"><img src="" alt=""></li>
-          <li class="menu-item"><img src="" alt=""></li>
+          <div class="menu-item"><img src="./images/icon-sidebar-1.png" alt="" class="icon-sidebar"></div>
+          <div class="menu-item"><img src="./images/icon-sidebar-2.png" alt="" class="icon-sidebar"></div>
+          <div class="menu-item"><img src="./images/icon-sidebar-3.png" alt="" class="icon-sidebar"></div>
+          <div class="menu-item"><img src="./images/icon-sidebar-4.png" alt="" class="icon-sidebar"></div>
+          <div class="menu-item"><img src="./images/icon-sidebar-5.png" alt="" class="icon-sidebar"></div>
+          <div class="menu-item"><img src="./images/icon-sidebar-6.png" alt="" class="icon-sidebar"></div>
+          <div class="menu-item"><img src="./images/icon-sidebar-7.png" alt="" class="icon-sidebar"></div>
         </ul>
       </div>
     </div>
