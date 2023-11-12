@@ -1009,7 +1009,10 @@
 }
 @media only screen and (max-width: 1599px) {
   .topic-page-wrapper .topic-content-wrapper .main-topic-by-day-wrapper .topic-by-day-item .list-topic .topic-item {
-    max-width: 343px;
+    max-width: 338px;
+    min-width: 338px;
+    margin-right: 32px;
+    margin-bottom: 32px;
   }
 }
 .topic-page-wrapper .topic-content-wrapper .main-topic-by-day-wrapper .topic-by-day-item .list-topic .topic-item:nth-child(3n) {

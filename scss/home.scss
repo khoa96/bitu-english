@@ -1067,7 +1067,10 @@
             margin-bottom: 54px;
 
             @include mq(max_xxl) {
-              max-width: 343px;
+              max-width: 338px;
+              min-width: 338px;
+              margin-right: 32px;
+              margin-bottom: 32px;;
             }
 
             &:nth-child(3n) {
