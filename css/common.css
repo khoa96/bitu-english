@@ -640,7 +640,7 @@ a {
   object-fit: cover;
 }
 .common-block-content .title-block .hightlight {
-  color: #A1CA38;
+  color: #a1ca38;
 }
 .common-block-content.review-template-class {
   padding: 50px 32px 45px 20px;
@@ -654,7 +654,7 @@ a {
 }
 
 .common-topic-item {
-  min-width: 290px;
+  min-width: 100%;
   max-width: 290px;
   height: auto;
   border-radius: 24px;
@@ -673,17 +673,24 @@ a {
   width: 100%;
   height: 156px;
   border-radius: 18px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 1599px) {
+  .common-topic-item.normal-topic .topic-header {
+    height: 1444px;
+  }
 }
 .common-topic-item.big-topic .topic-header {
   width: 100%;
   height: 162px;
+  object-fit: cover;
   border-radius: 18px;
 }
 .common-topic-item .topic-image {
   width: 100%;
   height: 100%;
   border-radius: 18px;
-  object-fit: contain;
+  object-fit: cover;
 }
 .common-topic-item .topic-content {
   padding: 12px 8px 8px;
@@ -697,6 +704,15 @@ a {
   line-height: normal;
   letter-spacing: -0.36px;
   margin-bottom: 8px;
+}
+.common-topic-item .topic-content .sub-title {
+  color: var(--gray-700, #4A5568);
+  font-family: Kanit Regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 4px;
 }
 .common-topic-item .topic-content .topic-footer {
   display: flex;
@@ -779,6 +795,201 @@ a {
 .common-control-roadmap.btn-prev .icon-arrow {
   margin-right: 12px;
   transform: rotate(180deg);
+}
+
+.common-history-list-topic-register {
+  min-width: 760px;
+  max-width: 760px;
+  border-radius: 16px;
+  height: auto;
+  border: 1px solid #dad4cd;
+  background: #fff;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
+  padding: 8px 16px 12px 16px;
+}
+.common-history-list-topic-register .header-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+.common-history-list-topic-register .header-block .left-header {
+  display: flex;
+  align-items: center;
+}
+.common-history-list-topic-register .header-block .left-header .txt-header {
+  color: #1a202c;
+  font-family: Kanit Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.common-history-list-topic-register .header-block .left-header .hightlight {
+  color: #ff6d03;
+}
+.common-history-list-topic-register .header-block .icon-header {
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+.common-history-list-topic-register .header-block .icon-calendar {
+  margin-right: 12px;
+}
+.common-history-list-topic-register .header-block .toggle-view-all-wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.common-history-list-topic-register .header-block .toggle-view-all-wrapper .btn-txt {
+  color: var(--2971-f-0, #2971f0);
+  font-family: Kanit Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 2px;
+}
+.common-history-list-topic-register .body-block {
+  width: 100%;
+}
+
+.common-history-topic-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0px;
+  border-top: 1px solid #e2e8f0;
+}
+.common-history-topic-item .left-content {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+}
+.common-history-topic-item .left-content .history-topic-image-wrapper {
+  min-width: 97px;
+  max-width: 97px;
+  height: 42px;
+  margin-right: 16px;
+}
+.common-history-topic-item .left-content .history-topic-image-wrapper .history-topic-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.common-history-topic-item .left-content .topic-time-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.common-history-topic-item .left-content .topic-time-wrapper .icon-wrapper {
+  border-radius: 1000px;
+  background: var(--gray-200, #edf2f7);
+  min-width: 32px;
+  max-width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+.common-history-topic-item .left-content .topic-time-wrapper .icon-wrapper .icon-clock {
+  min-width: 20px;
+  max-width: 20px;
+  height: 20px;
+}
+.common-history-topic-item .left-content .topic-time-wrapper .time-string {
+  min-width: max-content;
+  color: var(--gray-900, #1a202c);
+  font-family: Kanit Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.common-history-topic-item .right-content {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+}
+.common-history-topic-item .right-content .column {
+  width: 33.3333333333%;
+  display: flex;
+}
+.common-history-topic-item .right-content .column:nth-child(2) {
+  justify-content: flex-start;
+}
+.common-history-topic-item .right-content .column:last-child {
+  justify-content: flex-end;
+}
+.common-history-topic-item .right-content .teacher-info {
+  display: flex;
+  align-items: center;
+}
+.common-history-topic-item .right-content .teacher-info .teacher-image {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+}
+.common-history-topic-item .right-content .teacher-info .teacher-name {
+  flex-grow: 1;
+  color: var(--gray-900, #1a202c);
+  font-family: Kanit Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 80px;
+}
+.common-history-topic-item .right-content .topic-status {
+  display: flex;
+  align-items: center;
+  padding: 0px 4px;
+  border-radius: 1000px;
+  color: var(--gray-900, #1a202c);
+  font-family: Kanit Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.common-history-topic-item .right-content .topic-status .icon-check {
+  min-width: 16px;
+  max-width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.common-history-topic-item .right-content .topic-status.success {
+  background-color: rgba(72, 187, 120, 0.1);
+  color: #48bb78;
+}
+.common-history-topic-item .right-content .topic-status.info {
+  color: #2971f0;
+  background-color: rgba(41, 113, 240, 0.1);
+}
+.common-history-topic-item .right-content .topic-status.default {
+  background-color: rgba(26, 32, 44, 0.1);
+  color: #1a202c;
+}
+.common-history-topic-item .right-content .btn-join {
+  min-width: 85px;
+  padding: 6px 25px;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=common.css.map */
