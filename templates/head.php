@@ -14,9 +14,9 @@
   <link rel="stylesheet" type="text/css" href="css/font-awesome-all.min.css">
   <link rel="stylesheet" type="text/css" href="css/slick.min.css">
   <link rel="stylesheet" type="text/css" href="css/common.css">
-  <link rel="stylesheet" type="text/css" href="css/header.css">
   <link rel="stylesheet" type="text/css" href="css/authen.css">
   <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link rel="stylesheet" type="text/css" href="css/ranking.css">
 
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
