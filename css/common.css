@@ -654,14 +654,30 @@ a {
 }
 
 .common-topic-item {
-  min-width: 100%;
-  max-width: 290px;
+  width: 100%;
   height: auto;
   border-radius: 24px;
   border: 1px solid #dad4cd;
   background: #fff;
   box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
   padding: 8px;
+}
+.common-topic-item .topic-header {
+  position: relative;
+}
+.common-topic-item .label-learn-again {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0px 18px;
+  padding: 5px 16px;
+  color: #FFF;
+  font-family: Kanit;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: var(--ff-6-d-03, #FF6D03);
 }
 .common-topic-item.small-topic .topic-header {
   width: 100%;
@@ -677,7 +693,7 @@ a {
 }
 @media only screen and (max-width: 1599px) {
   .common-topic-item.normal-topic .topic-header {
-    height: 1444px;
+    height: 144px;
   }
 }
 .common-topic-item.big-topic .topic-header {
@@ -742,8 +758,13 @@ a {
   font-weight: 400;
   line-height: normal;
 }
+.common-topic-item .topic-content .topic-footer .common-btn {
+  min-width: 85px;
+  padding: 8px 14px;
+  font-size: 18px;
+}
 .common-topic-item .topic-content .topic-footer .btn-join-topic {
-  min-width: 95px;
+  min-width: 85px;
   padding: 6px 25px;
   color: #fff;
   font-family: Kanit Bold;
@@ -751,6 +772,21 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+.common-topic-item .topic-content .topic-footer .btn-learn-again {
+  color: #1A202C;
+  border-radius: 1000px;
+  border: 1.5px solid #B48100;
+  background: var(--ffb-700, #FFB700);
+  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15), 0px 3px 0px 0px #FFC93E inset, 0px -3px 0px 0px #FFC93E inset;
+}
+.common-topic-item .topic-content .topic-footer .btn-scheduled {
+  padding: 6px 16px;
+  color: #fff;
+  border-radius: 1000px;
+  border: 1.5px solid var(--gray-600, #718096);
+  background: var(--gray-500, #A0AEC0);
+  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15), 0px 3px 0px 0px #C0CDDF inset, 0px -3px 0px 0px #C0CDDF inset;
 }
 
 .common-control-roadmap {
@@ -806,6 +842,12 @@ a {
   background: #fff;
   box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
   padding: 8px 16px 12px 16px;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 1599px) {
+  .common-history-list-topic-register {
+    margin-top: 16px;
+  }
 }
 .common-history-list-topic-register .header-block {
   width: 100%;
@@ -855,6 +897,9 @@ a {
 }
 .common-history-list-topic-register .body-block {
   width: 100%;
+}
+.common-history-list-topic-register .collapse-list-history-topic {
+  display: none;
 }
 
 .common-history-topic-item {

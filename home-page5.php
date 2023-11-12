@@ -1,11 +1,10 @@
 <?php include "templates/head.php"; ?>
 
 <body>
-  <div class="background-common">
-    <div class="page-content-wrapper-common home-page-wrapper">
-      <!-- IMPORT  HEADER -->
+  <div class="home-page-wrapper">
+    <!-- IMPORT  HEADER -->
+    <div class="home-page-content-mask">
       <?php include "templates/homeHeader.php"; ?>
-
       <div class="topic-page-wrapper">
         <div class="container">
           <div class="topic-content-wrapper">
@@ -18,7 +17,7 @@
                       Bạn đã đặt lịch tham gia <span class="hightlight">3 buổi học</span>
                     </p>
                   </div>
-                  <div class="toggle-view-all-wrapper">
+                  <div class="toggle-view-all-wrapper collapse-history-topic-btn">
                     <span class="btn-txt">Xem tất cả</span>
                     <img src="./images/icon-arrow-down.png" class="icon-header icon-arrow" alt="">
                   </div>
@@ -46,9 +45,9 @@
                         </div>
                       </div>
                       <!-- success:  Đã xác nhận
-                        default: Từ chối
-                        info: Chờ xác nhận
-                      -->
+                              default: Từ chối
+                              info: Chờ xác nhận
+                            -->
                       <div class="column">
                         <div class="topic-status success">
                           <img src="./images/icon-check-2.png" class="icon-check" alt="">
@@ -64,70 +63,73 @@
                       </div>
                     </div>
                   </div>
-                  <div class="common-history-topic-item">
-                    <div class="left-content">
-                      <div class="history-topic-image-wrapper">
-                        <img src="./images/history-topic-2.png" class="history-topic-image" alt="">
-                      </div>
-
-                      <div class="topic-time-wrapper">
-                        <div class="icon-wrapper">
-                          <img src="./images/icon-clock.png" class="icon-clock" alt="">
+                  <div class="collapse-list-history-topic">
+                    <div class=" common-history-topic-item">
+                      <div class="left-content">
+                        <div class="history-topic-image-wrapper">
+                          <img src="./images/history-topic-2.png" class="history-topic-image" alt="">
                         </div>
-                        <span class="time-string">11:30, Thứ 5 tuần sau</span>
+
+                        <div class="topic-time-wrapper">
+                          <div class="icon-wrapper">
+                            <img src="./images/icon-clock.png" class="icon-clock" alt="">
+                          </div>
+                          <span class="time-string">11:30, Thứ 5 tuần sau</span>
+                        </div>
+                      </div>
+                      <div class="right-content">
+                        <div class="column">
+                          <div class="teacher-info">
+                            <img src="./images/teacher-2.png" class="teacher-image" alt="">
+                            <span class="teacher-name">David</span>
+                          </div>
+                        </div>
+                        <!-- success:  Đã xác nhận
+                              default: Từ chối
+                              info: Chờ xác nhận
+                            -->
+                        <div class="column">
+                          <div class="topic-status info">
+                            <span class="txt-status">Chờ xác nhận</span>
+                          </div>
+                        </div>
+                        <div class="column"></div>
                       </div>
                     </div>
-                    <div class="right-content">
-                      <div class="column">
-                        <div class="teacher-info">
-                          <img src="./images/teacher-2.png" class="teacher-image" alt="">
-                          <span class="teacher-name">David</span>
+                    <div class="common-history-topic-item">
+                      <div class="left-content">
+                        <div class="history-topic-image-wrapper">
+                          <img src="./images/history-topic-3.png" class="history-topic-image" alt="">
+                        </div>
+
+                        <div class="topic-time-wrapper">
+                          <div class="icon-wrapper">
+                            <img src="./images/icon-clock.png" class="icon-clock" alt="">
+                          </div>
+                          <span class="time-string">11:30, Thứ 5</span>
                         </div>
                       </div>
-                      <!-- success:  Đã xác nhận
-                        default: Từ chối
-                        info: Chờ xác nhận
-                      -->
-                      <div class="column">
-                        <div class="topic-status info">
-                          <span class="txt-status">Chờ xác nhận</span>
+                      <div class="right-content">
+                        <div class="column">
+                          <div class="teacher-info">
+                            <img src="./images/teacher-3.png" class="teacher-image" alt="">
+                            <span class="teacher-name">Jane</span>
+                          </div>
                         </div>
+                        <!-- success:  Đã xác nhận
+                              default: Từ chối
+                              info: Chờ xác nhận
+                            -->
+                        <div class="column">
+                          <div class="topic-status default">
+                            <span class="txt-status">Từ chối</span>
+                          </div>
+                        </div>
+                        <div class="column"></div>
                       </div>
-                      <div class="column"></div>
                     </div>
                   </div>
-                  <div class="common-history-topic-item">
-                    <div class="left-content">
-                      <div class="history-topic-image-wrapper">
-                        <img src="./images/history-topic-3.png" class="history-topic-image" alt="">
-                      </div>
 
-                      <div class="topic-time-wrapper">
-                        <div class="icon-wrapper">
-                          <img src="./images/icon-clock.png" class="icon-clock" alt="">
-                        </div>
-                        <span class="time-string">11:30, Thứ 5</span>
-                      </div>
-                    </div>
-                    <div class="right-content">
-                      <div class="column">
-                        <div class="teacher-info">
-                          <img src="./images/teacher-3.png" class="teacher-image" alt="">
-                          <span class="teacher-name">Jane</span>
-                        </div>
-                      </div>
-                      <!-- success:  Đã xác nhận
-                        default: Từ chối
-                        info: Chờ xác nhận
-                      -->
-                      <div class="column">
-                        <div class="topic-status default">
-                          <span class="txt-status">Từ chối</span>
-                        </div>
-                      </div>
-                      <div class="column"></div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -600,6 +602,8 @@
     </div>
   </div>
   </div>
+  <?php include "templates/footer.php"; ?>
+  <script src="js/collapse.js"></script>
 </body>
 
 </html>

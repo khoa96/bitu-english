@@ -640,14 +640,32 @@ a {
 }
 
 .common-topic-item {
-  min-width: 100%;
-  max-width: 290px;
+  width: 100%;
   height: auto;
   border-radius: 24px;
   border: 1px solid #dad4cd;
   background: #fff;
   box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
   padding: 8px;
+
+  .topic-header {
+    position: relative;
+  }
+
+  .label-learn-again {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0px 18px;
+    padding: 5px 16px;
+    color: #FFF;
+    font-family: Kanit;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: var(--ff-6-d-03, #FF6D03);
+  }
 
   &.small-topic {
     .topic-header {
@@ -666,7 +684,7 @@ a {
        object-fit: cover;
 
       @include mq(max_xxl) {
-        height: 1444px;;
+        height: 144px;;
       }
     }
   }
@@ -741,8 +759,14 @@ a {
           }
         }
       }
+
+      .common-btn {
+        min-width: 85px;
+        padding: 8px 14px;
+        font-size: 18px;
+      }
       .btn-join-topic {
-        min-width: 95px;
+        min-width: 85px;
         padding: 6px 25px;
         color: #fff;
         font-family: Kanit Bold;
@@ -750,6 +774,23 @@ a {
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+      }
+
+      .btn-learn-again {
+        color: #1A202C;
+        border-radius: 1000px;
+border: 1.5px solid #B48100;
+background: var(--ffb-700, #FFB700);
+box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15), 0px 3px 0px 0px #FFC93E inset, 0px -3px 0px 0px #FFC93E inset;
+      }
+
+      .btn-scheduled {
+        padding: 6px 16px;
+        color: #fff;
+        border-radius: 1000px;
+        border: 1.5px solid var(--gray-600, #718096);
+        background: var(--gray-500, #A0AEC0);
+        box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15), 0px 3px 0px 0px #C0CDDF inset, 0px -3px 0px 0px #C0CDDF inset;
       }
     }
   }
@@ -814,6 +855,11 @@ a {
   background: #fff;
   box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
   padding: 8px 16px 12px 16px;
+  margin-top: 30px;
+
+  @include mq(max_xxl) {
+    margin-top: 16px;
+  }
 
   .header-block {
     width: 100%;
@@ -869,6 +915,10 @@ a {
 
   .body-block {
     width: 100%;
+  }
+
+  .collapse-list-history-topic {
+    display: none;
   }
 }
 
