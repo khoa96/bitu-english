@@ -76,6 +76,11 @@
 .home-page-roadmap-topic::after {
   background-image: url("../images/bottom-mask-background-2.png");
 }
+@media only screen and (max-width: 1599px) {
+  .home-page-roadmap-topic::after {
+    background-image: url("../images/bottom-mask-background-3.png");
+  }
+}
 
 .home-page-content-mask {
   position: relative;
@@ -207,8 +212,8 @@
   padding: 4px 16px;
   border-radius: 1000px;
   border: 1.5px solid #989187;
-  background: #FFFBF5;
-  color: var(--gray-900, #1A202C);
+  background: #fffbf5;
+  color: var(--gray-900, #1a202c);
   text-align: center;
   font-family: Kanit;
   font-size: 18px;
@@ -980,7 +985,7 @@
   margin-right: 16px;
 }
 .topic-page-wrapper .topic-content-wrapper .main-topic-by-day-wrapper .topic-by-day-item .header-block .txt-title {
-  color: var(--gray-900, #1A202C);
+  color: var(--gray-900, #1a202c);
   font-family: Kanit Bold;
   font-size: 32px;
   font-style: normal;
@@ -1035,6 +1040,11 @@
   min-height: 600px;
   padding-top: 16px;
 }
+@media only screen and (max-width: 1599px) {
+  .home-page-roadmap-topic-wrapper .home-page-roadmap-topic-content .list-roadmap-of-topic .slick-list {
+    min-height: 500px;
+  }
+}
 .home-page-roadmap-topic-wrapper .home-page-roadmap-topic-content .list-roadmap-of-topic .roadmap-of-topic-item {
   min-width: 290px;
   max-width: 290px;
@@ -1046,6 +1056,12 @@
   justify-content: center;
   align-items: center;
   position: relative;
+}
+@media only screen and (max-width: 1599px) {
+  .home-page-roadmap-topic-wrapper .home-page-roadmap-topic-content .list-roadmap-of-topic .roadmap-of-topic-item {
+    min-width: 230px;
+    max-width: 230px;
+  }
 }
 .home-page-roadmap-topic-wrapper .home-page-roadmap-topic-content .list-roadmap-of-topic .roadmap-of-topic-item:nth-child(2n) {
   top: 60px;
@@ -1062,13 +1078,28 @@
   min-width: 152.459px;
   max-width: 152.459px;
   height: 60px;
-  background-size: cover;
+}
+@media only screen and (max-width: 1599px) {
+  .home-page-roadmap-topic-wrapper .home-page-roadmap-topic-content .list-roadmap-of-topic .roadmap-of-topic-item .bottom-image-1 {
+    min-width: 97px;
+    max-width: 97px;
+    height: 38.174px;
+    flex-shrink: 0;
+  }
 }
 .home-page-roadmap-topic-wrapper .home-page-roadmap-topic-content .list-roadmap-of-topic .roadmap-of-topic-item .bottom-image-2 {
   min-width: 184px;
   max-width: 184px;
   height: 136px;
   background-size: cover;
+}
+@media only screen and (max-width: 1599px) {
+  .home-page-roadmap-topic-wrapper .home-page-roadmap-topic-content .list-roadmap-of-topic .roadmap-of-topic-item .bottom-image-2 {
+    min-width: 118px;
+    max-width: 118px;
+    height: 88px;
+    flex-shrink: 0;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

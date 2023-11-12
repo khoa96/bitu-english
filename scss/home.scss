@@ -8,7 +8,7 @@
   width: 100%;
   height: auto;
   background-color: #f2ece4;
-   &::before {
+  &::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -22,7 +22,7 @@
     z-index: 1;
   }
 
-    &::after {
+  &::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -35,20 +35,22 @@
     content: "";
     z-index: 2;
   }
-
 }
 
 .home-page-roadmap-topic {
   &::after {
-    background-image: url('../images/bottom-mask-background-2.png');
+    background-image: url("../images/bottom-mask-background-2.png");
+
+    @include mq(max_xxl) {
+       background-image: url("../images/bottom-mask-background-3.png");
+    }
   }
 }
 
-.home-page-content-mask{
+.home-page-content-mask {
   position: relative;
   z-index: 99999;
   min-height: 100vh;
-
 }
 
 .home-page-content-wrapper {
@@ -137,7 +139,7 @@
     cursor: pointer;
     position: absolute;
     top: 8px;
-    left:  40px;
+    left: 40px;
 
     @include mq(max_xxl) {
       top: 8px;
@@ -155,21 +157,20 @@
         max-width: 28px;
         height: 25px;
       }
-    
     }
 
     .level-image {
-       min-width: 80px;
+      min-width: 80px;
       max-width: 80px;
       height: 80px;
       object-fit: cover;
       margin: 0px 16px 0px 24px;
 
       @include mq(max_xxl) {
-         min-width: 60px;
-      max-width: 60px;
-      height:  60px;
-      margin: 0px 8px 0px 12px;
+        min-width: 60px;
+        max-width: 60px;
+        height: 60px;
+        margin: 0px 8px 0px 12px;
       }
     }
 
@@ -177,8 +178,8 @@
       padding: 4px 16px;
       border-radius: 1000px;
       border: 1.5px solid #989187;
-      background: #FFFBF5;
-      color: var(--gray-900, #1A202C);
+      background: #fffbf5;
+      color: var(--gray-900, #1a202c);
       text-align: center;
       font-family: Kanit;
       font-size: 18px;
@@ -190,7 +191,7 @@
 
       @include mq(max_xxl) {
         font-size: 16px;
-            padding: 4px 12px;
+        padding: 4px 12px;
       }
     }
   }
@@ -448,7 +449,7 @@
     top: -20px;
     margin-bottom: -20px;
     max-width: 290px;
-    max-width: 290px;;
+    max-width: 290px;
   }
 }
 
@@ -459,7 +460,6 @@
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-
 }
 .page-roadmap-content-wrapper {
   width: 920.452px;
@@ -770,7 +770,7 @@
     align-items: center;
     flex-direction: column;
     padding-bottom: 250px;
-  
+
     .header-topic-page-block {
       margin-bottom: 44px;
     }
@@ -811,7 +811,7 @@
 
     .block-item {
       width: 100%;
-      max-width: 1224px;;
+      max-width: 1224px;
       border-radius: 24px;
       border: 1px solid #dad4cd;
       background: #fff;
@@ -1023,7 +1023,6 @@
         max-width: 1080px;
       }
 
-
       .topic-by-day-item {
         width: 100%;
 
@@ -1035,17 +1034,16 @@
           @include mq(max_xxl) {
             margin-bottom: 32px;
           }
-          
+
           .icon-calendar {
             min-width: 40px;
             max-width: 40px;
             height: 40px;
             margin-right: 16px;
-            
           }
 
           .txt-title {
-            color: var(--gray-900, #1A202C);
+            color: var(--gray-900, #1a202c);
             font-family: Kanit Bold;
             font-size: 32px;
             font-style: normal;
@@ -1071,21 +1069,16 @@
             @include mq(max_xxl) {
               max-width: 343px;
             }
-            
 
             &:nth-child(3n) {
               margin-right: 0;
             }
           }
         }
-
       }
-
     }
   }
 }
-
-
 
 .home-page-roadmap-topic-wrapper {
   width: 100%;
@@ -1109,19 +1102,28 @@
       .slick-list {
         min-height: 600px;
         padding-top: 16px;
+
+        @include mq(max_xxl) {
+          min-height: 500px;
+        }
       }
 
       .roadmap-of-topic-item {
         min-width: 290px;
-        max-width: 290px;;
-        height:auto;
-        min-height: max-content;;
+        max-width: 290px;
+        height: auto;
+        min-height: max-content;
         margin-right: 72px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position: relative;
+
+        @include mq(max_xxl) {
+          min-width: 230px;
+          max-width: 230px;
+        }
 
         &:nth-child(2n) {
           top: 60px;
@@ -1136,10 +1138,15 @@
         }
 
         .bottom-image-1 {
-            min-width: 152.459px;
-           max-width: 152.459px;
-            height: 60px;
-                  background-size: cover;
+          min-width: 152.459px;
+          max-width: 152.459px;
+          height: 60px;
+          @include mq(max_xxl) {
+            min-width: 97px;
+            max-width: 97px;
+            height: 38.174px;
+            flex-shrink: 0;
+          }
         }
 
         .bottom-image-2 {
@@ -1147,10 +1154,15 @@
           max-width: 184px;
           height: 136px;
           background-size: cover;
-        }
 
+          @include mq(max_xxl) {
+            min-width: 118px;
+            max-width: 118px;
+            height: 88px;
+            flex-shrink: 0;
+          }
+        }
       }
     }
-
   }
 }

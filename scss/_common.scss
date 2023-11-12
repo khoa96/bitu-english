@@ -658,13 +658,13 @@ a {
     right: 0;
     border-radius: 0px 18px;
     padding: 5px 16px;
-    color: #FFF;
+    color: #fff;
     font-family: Kanit;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    background: var(--ff-6-d-03, #FF6D03);
+    background: var(--ff-6-d-03, #ff6d03);
   }
 
   &.small-topic {
@@ -673,6 +673,10 @@ a {
       height: 120px;
       border-radius: 18px;
       object-fit: cover;
+
+      @include mq(max_xxl) {
+        height: 92px;
+      }
     }
   }
 
@@ -681,10 +685,10 @@ a {
       width: 100%;
       height: 156px;
       border-radius: 18px;
-       object-fit: cover;
+      object-fit: cover;
 
       @include mq(max_xxl) {
-        height: 144px;;
+        height: 144px;
       }
     }
   }
@@ -701,7 +705,7 @@ a {
     width: 100%;
     height: 100%;
     border-radius: 18px;
-    object-fit: cover;;
+    object-fit: cover;
   }
   .topic-content {
     padding: 12px 8px 8px;
@@ -714,16 +718,20 @@ a {
       line-height: normal;
       letter-spacing: -0.36px;
       margin-bottom: 8px;
+
+      @include mq(max_xxl) {
+        font-size: 16px;
+      }
     }
 
     .sub-title {
-      color: var(--gray-700, #4A5568);
-          font-family: Kanit Regular;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          margin-bottom: 4px;;
+      color: var(--gray-700, #4a5568);
+      font-family: Kanit Regular;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 4px;
     }
 
     .topic-footer {
@@ -764,6 +772,9 @@ a {
         min-width: 85px;
         padding: 8px 14px;
         font-size: 18px;
+          @include mq(max_xxl) {
+          font-size: 16px;
+        }
       }
       .btn-join-topic {
         min-width: 85px;
@@ -774,14 +785,19 @@ a {
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+
+        @include mq(max_xxl) {
+          font-size: 16px;
+        }
       }
 
       .btn-learn-again {
-        color: #1A202C;
+        color: #1a202c;
         border-radius: 1000px;
-border: 1.5px solid #B48100;
-background: var(--ffb-700, #FFB700);
-box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15), 0px 3px 0px 0px #FFC93E inset, 0px -3px 0px 0px #FFC93E inset;
+        border: 1.5px solid #b48100;
+        background: var(--ffb-700, #ffb700);
+        box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15),
+          0px 3px 0px 0px #ffc93e inset, 0px -3px 0px 0px #ffc93e inset;
       }
 
       .btn-scheduled {
@@ -789,8 +805,9 @@ box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15), 0px 3px 0px 0px #FFC93E inset, 
         color: #fff;
         border-radius: 1000px;
         border: 1.5px solid var(--gray-600, #718096);
-        background: var(--gray-500, #A0AEC0);
-        box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15), 0px 3px 0px 0px #C0CDDF inset, 0px -3px 0px 0px #C0CDDF inset;
+        background: var(--gray-500, #a0aec0);
+        box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15),
+          0px 3px 0px 0px #c0cddf inset, 0px -3px 0px 0px #c0cddf inset;
       }
     }
   }
@@ -821,6 +838,7 @@ box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15), 0px 3px 0px 0px #FFC93E inset, 
     display: block;
     max-width: 104px;
     text-align: left;
+  
   }
 
   .icon-arrow {
