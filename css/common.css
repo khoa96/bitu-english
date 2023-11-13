@@ -1159,4 +1159,45 @@ a {
   line-height: normal;
 }
 
+.reward-tooltip-content {
+  padding-right: 6px !important;
+}
+.reward-tooltip-content .list-reward {
+  width: 100%;
+  padding-right: 6px;
+  max-height: 215px;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+.reward-tooltip-content .list-reward::-webkit-scrollbar {
+  width: 5px;
+}
+.reward-tooltip-content .list-reward::-webkit-scrollbar-track {
+  background: transparent;
+}
+.reward-tooltip-content .list-reward::-webkit-scrollbar-thumb {
+  background: #718096;
+  border-radius: 5px;
+}
+.reward-tooltip-content .list-reward .reward-item {
+  min-width: 47px;
+  max-width: 47px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  margin-bottom: 10px;
+}
+.reward-tooltip-content .list-reward .reward-item .icon-reward {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=common.css.map */

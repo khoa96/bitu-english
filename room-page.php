@@ -32,6 +32,156 @@
         <ul class="list-menu">
           <div class="menu-item">
             <img src="./images/icon-sidebar-1.png" alt="" class="icon-sidebar">
+
+            <div class="common-tooltip-box-content reward-tooltip-content">
+              <h4 class="tooltip-title">Reward</h4>
+              <div class="tooltip-content-wrapper">
+                <div class="list-reward">
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-2.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-3.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-2.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-3.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-2.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-3.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-2.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-3.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-2.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-3.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-2.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-3.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-2.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-3.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-2.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-3.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-2.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-3.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-2.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-3.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-2.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-3.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-2.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-3.png" class="icon-reward" alt="">
+                  </div>
+                  <div class="reward-item">
+                    <img src="./images/icon-reward-1.png" class="icon-reward" alt="">
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./images/icon-sidebar-2.png" alt="" class="icon-sidebar">
             <div class="common-tooltip-box-content">
               <h4 class="tooltip-title">Badges</h4>
               <div class="tooltip-content-wrapper">
@@ -84,15 +234,6 @@
                     <span class="count">x1</span>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="menu-item">
-            <img src="./images/icon-sidebar-2.png" alt="" class="icon-sidebar">
-            <div class="common-tooltip-box-content">
-              <h4 class="tooltip-title">Reward</h4>
-              <div class="tooltip-content-wrapper">
-                nguyen dang khoa
               </div>
             </div>
           </div>
