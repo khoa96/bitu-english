@@ -1260,11 +1260,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 .room-page-wrapper .room-body .right-sidebar .list-menu .menu-item:hover {
   background: rgba(255, 109, 3, 0.1);
+}
+.room-page-wrapper .room-body .right-sidebar .list-menu .menu-item:hover .common-tooltip-box-content {
+  display: block;
 }
 .room-page-wrapper .room-body .right-sidebar .list-menu .menu-item .icon-sidebar {
   width: 36px;

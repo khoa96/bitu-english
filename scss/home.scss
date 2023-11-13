@@ -1330,11 +1330,16 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          position: relative;
           cursor: pointer;
           transition: all 0.2s ease;
 
           &:hover {
             background: rgba(255, 109, 3, 0.1);
+
+            .common-tooltip-box-content {
+              display: block;
+            }
           }
 
           .icon-sidebar {

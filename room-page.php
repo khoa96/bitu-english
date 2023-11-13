@@ -30,8 +30,72 @@
       <div class="left-content">Content Page</div>
       <div class="right-sidebar">
         <ul class="list-menu">
-          <div class="menu-item"><img src="./images/icon-sidebar-1.png" alt="" class="icon-sidebar"></div>
-          <div class="menu-item"><img src="./images/icon-sidebar-2.png" alt="" class="icon-sidebar"></div>
+          <div class="menu-item">
+            <img src="./images/icon-sidebar-1.png" alt="" class="icon-sidebar">
+            <div class="common-tooltip-box-content">
+              <h4 class="tooltip-title">Badges</h4>
+              <div class="tooltip-content-wrapper">
+                <div class="list-badge">
+                  <div class="badge-item">
+                    <div class="badge-info">
+                      <div class="badge-wrapper">
+                        <img src="./images/icon-bradge-1.png" class="badge-image" alt="">
+                      </div>
+                      <span class="badge-name">Good Speaker</span>
+                    </div>
+                    <span class="count">x1</span>
+                  </div>
+                  <div class="badge-item">
+                    <div class="badge-info">
+                      <div class="badge-wrapper">
+                        <img src="./images/icon-bradge-2.png" class="badge-image" alt="">
+                      </div>
+                      <span class="badge-name">Good
+                        Pronouncer</span>
+                    </div>
+                    <span class="count">x1</span>
+                  </div>
+
+                  <div class="badge-item">
+                    <div class="badge-info">
+                      <div class="badge-wrapper">
+                        <img src="./images/icon-bradge-1.png" class="badge-image" alt="">
+                      </div>
+                      <span class="badge-name">Good Speaker</span>
+                    </div>
+                    <span class="count">x1</span>
+                  </div>
+                  <div class="badge-item">
+                    <div class="badge-info">
+                      <div class="badge-wrapper">
+                        <img src="./images/icon-bradge-1.png" class="badge-image" alt="">
+                      </div>
+                      <span class="badge-name">Good Speaker</span>
+                    </div>
+                    <span class="count">x1</span>
+                  </div>
+                  <div class="badge-item">
+                    <div class="badge-info">
+                      <div class="badge-wrapper">
+                        <img src="./images/icon-bradge-1.png" class="badge-image" alt="">
+                      </div>
+                      <span class="badge-name">Good Speaker</span>
+                    </div>
+                    <span class="count">x1</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./images/icon-sidebar-2.png" alt="" class="icon-sidebar">
+            <div class="common-tooltip-box-content">
+              <h4 class="tooltip-title">Reward</h4>
+              <div class="tooltip-content-wrapper">
+                nguyen dang khoa
+              </div>
+            </div>
+          </div>
           <div class="menu-item"><img src="./images/icon-sidebar-3.png" alt="" class="icon-sidebar"></div>
           <div class="menu-item"><img src="./images/icon-sidebar-4.png" alt="" class="icon-sidebar"></div>
           <div class="menu-item"><img src="./images/icon-sidebar-5.png" alt="" class="icon-sidebar"></div>
