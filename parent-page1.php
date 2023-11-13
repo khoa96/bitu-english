@@ -119,11 +119,11 @@
                   <ul class="list-value">
                     <li class="value-item">
                       <span class="txt-label">Trình độ Kids Starter:</span>
-                      <span class="txt-value">5/36</span>
+                      <span class="txt-value"> 5/36</span>
                     </li>
                     <li class="value-item">
                       <span class="txt-label">Khoá học STEAM:</span>
-                      <span class="txt-value">5/36</span>
+                      <span class="txt-value"> 5/36</span>
                     </li>
                   </ul>
                 </div>

@@ -315,6 +315,7 @@
 }
 .parent-page-content-wrapper .footer-block .list-value .value-item .txt-value {
   color: #FF6D03;
+  margin-left: 4px;
 }
 .parent-page-content-wrapper .footer-block .list-value .value-item:last-child {
   margin-bottom: 0;
