@@ -275,6 +275,7 @@
 }
 .parent-page-content-wrapper .progress-table-wrapper .progress-table .active {
   background-color: #FF6D03;
+  cursor: pointer;
 }
 .parent-page-content-wrapper .progress-table-wrapper .suggestion-wrapper {
   display: flex;
