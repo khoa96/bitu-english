@@ -233,7 +233,7 @@
   display: flex;
   align-items: center;
 }
-.home-header-content-wrapper .menu-setting-wrapper .btn-rating-table {
+.home-header-content-wrapper .menu-setting-wrapper .btn-rating-table, .home-header-content-wrapper .menu-setting-wrapper .btn-parent {
   color: var(--gray-900, #1a202c);
   font-family: Kanit Medium;
   font-size: 18px;
@@ -242,9 +242,12 @@
   line-height: normal;
 }
 @media only screen and (max-width: 1599px) {
-  .home-header-content-wrapper .menu-setting-wrapper .btn-rating-table {
+  .home-header-content-wrapper .menu-setting-wrapper .btn-rating-table, .home-header-content-wrapper .menu-setting-wrapper .btn-parent {
     font-size: 16px;
   }
+}
+.home-header-content-wrapper .menu-setting-wrapper .btn-parent {
+  margin-right: 12px;
 }
 .home-header-content-wrapper .menu-setting-wrapper .list-option {
   display: flex;
@@ -1276,3 +1279,4 @@
   flex-shrink: 0;
 }
 
+/*# sourceMappingURL=home.css.map */

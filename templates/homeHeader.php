@@ -19,9 +19,8 @@
       </div>
 
       <div class="menu-setting-wrapper">
-        <a href="#" target="" title="" class="btn-rating-table"
-          >Bảng xếp hạng</a
-        >
+        <a href="#" target="" title="" class="btn-parent">Phụ huynh</a>
+        <a href="#" target="" title="" class="btn-rating-table">Bảng xếp hạng</a>
         <ul class="list-option">
           <li class="option-item">
             <a href="#"><img src="../images/icon-option1.png" alt="" /></a>
@@ -34,11 +33,7 @@
           </li>
         </ul>
         <div class="user-info-wrapper">
-          <img
-            src="../images/icon-header-avatar.png"
-            class="user-avatar"
-            alt=""
-          />
+          <img src="../images/icon-header-avatar.png" class="user-avatar" alt="" />
           <span class="username">Dũng Nguyễn</span>
         </div>
       </div>
