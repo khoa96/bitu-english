@@ -599,6 +599,33 @@ a {
       }
     }
   }
+
+  .list-lesson {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 6px;;
+     /* width */
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 5px;
+    }
+    .common-lesson-item {
+      padding: 16px 0px;
+      border-bottom: 1px solid #E2E8F0;
+
+    }
+
+  }
 }
 .popup--show {
   z-index: 99999999;

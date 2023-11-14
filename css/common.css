@@ -618,6 +618,28 @@ a {
     max-width: 100px;
   }
 }
+.popup-content .list-lesson {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 6px;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+.popup-content .list-lesson::-webkit-scrollbar {
+  width: 5px;
+}
+.popup-content .list-lesson::-webkit-scrollbar-track {
+  background: transparent;
+}
+.popup-content .list-lesson::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 5px;
+}
+.popup-content .list-lesson .common-lesson-item {
+  padding: 16px 0px;
+  border-bottom: 1px solid #E2E8F0;
+}
 
 .popup--show {
   z-index: 99999999;

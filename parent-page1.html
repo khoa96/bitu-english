@@ -1,10 +1,84 @@
-<?php include "templates/head.php"; ?>
 
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bitu Education</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link data-n-head="ssr" rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome-all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/authen.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link rel="stylesheet" type="text/css" href="css/ranking.css">
+  <link rel="stylesheet" type="text/css" href="css/parent.css">
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+  <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    -->
+</head>
 <body>
   <div class="home-page-wrapper">
     <div class="home-page-content-mask">
       <!-- IMPORT  HEADER -->
-      <?php include "templates/homeHeader.php"; ?>
+      <header class="home-header-wrapper">
+  <div class="container-fluid">
+    <div class="home-header-content-wrapper">
+      <a href="#" title="" target="_self">
+        <img src="../images/logo-bitu-kids.png" class="logo-header" alt="" />
+      </a>
+
+      <div class="main-menu">
+        <button class="common-btn header-btn active">
+          <img src="./images/icon-btn-1.png" class="icon-btn-1" alt="" />
+          <img src="./images/icon-btn-2.png" class="icon-btn-2" alt="" />
+          <span class="text-btn">Học theo Lộ trình</span>
+        </button>
+        <button class="common-btn header-btn">
+          <img src="./images/icon-btn-1.png" class="icon-btn-1" alt="" />
+          <img src="./images/icon-btn-2.png" class="icon-btn-2" alt="" />
+          <span class="text-btn">Nói chuyện theo chủ đề</span>
+        </button>
+      </div>
+
+      <div class="menu-setting-wrapper">
+        <a href="#" target="" title="" class="btn-rating-table"
+          >Bảng xếp hạng</a
+        >
+        <ul class="list-option">
+          <li class="option-item">
+            <a href="#"><img src="../images/icon-option1.png" alt="" /></a>
+          </li>
+          <li class="option-item">
+            <a href="#"><img src="../images/icon-option2.png" alt="" /></a>
+          </li>
+          <li class="option-item">
+            <a href="#"><img src="../images/icon-option-3.png" alt="" /></a>
+          </li>
+        </ul>
+        <div class="user-info-wrapper">
+          <img
+            src="../images/icon-header-avatar.png"
+            class="user-avatar"
+            alt=""
+          />
+          <span class="username">Dũng Nguyễn</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
       <!-- IMPORT  HEADER -->
       <div class="parent-page-content-wrapper">
         <div class="container">
@@ -261,8 +335,14 @@
     </div>
   </div>
 
-  <?php include "templates/footer.php"; ?>
-  <script src="./js/popup.js"></script>
+  <!-- JAVASCRIPT-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/main.js"></script>  <script src="./js/popup.js"></script>
 </body>
 
 </html>

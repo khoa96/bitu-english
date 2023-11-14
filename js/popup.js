@@ -1,6 +1,6 @@
-const showPopup = () => {
+const showPopup = (targetElementClass) => {
   //handle show popup
-  $(".popup").addClass("popup--show");
+  $(targetElementClass).addClass("popup--show");
 };
 
 // function - Hide popup & body scroll off
@@ -18,5 +18,9 @@ $(".popup").on("click", function (event) {
 });
 
 $("#choose-avatar-btn").on("click", function () {
-  showPopup();
+  showPopup(".popup-list-user-avatar");
+});
+
+$(".table-body .column").on("click", function () {
+  showPopup(".popup-list-history-lesson");
 });
