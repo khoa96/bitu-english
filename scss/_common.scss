@@ -603,8 +603,8 @@ a {
   .list-lesson {
     max-height: 400px;
     overflow-y: auto;
-    padding-right: 6px;;
-     /* width */
+    padding-right: 6px;
+    /* width */
     &::-webkit-scrollbar {
       width: 5px;
     }
@@ -621,10 +621,8 @@ a {
     }
     .common-lesson-item {
       padding: 16px 0px;
-      border-bottom: 1px solid #E2E8F0;
-
+      border-bottom: 1px solid #e2e8f0;
     }
-
   }
 }
 .popup--show {
@@ -640,17 +638,28 @@ a {
   min-width: 807px;
   height: auto;
   max-width: 807px;
-  padding: 50px 32px 45px 20px;
+  padding: 50px 30px 45px 40px;
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 
   @include mq(max_xxl) {
     border-radius: 32px;
-    padding: 32px 24px 16px 16px;
-    margin-bottom: 16px;
+    padding: 50px 30px 45px 40px;
   }
   .title-block {
     display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    .txt-step-count {
+      color: var(--gray-900, #1a202c);
+      font-family: Kanit Bold;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.48px;
+    }
 
     .icon-step-1 {
       width: 70px;
@@ -674,7 +683,7 @@ a {
     @include mq(max_xxl) {
       border-radius: 32px;
       padding: 32px 24px 45px 16px;
-      margin-bottom: 16px;
+      margin-bottom: 32px;
     }
   }
 }
@@ -1350,9 +1359,8 @@ a {
   .lesson-detail {
     flex-grow: 1;
 
-
     .lesson-title {
-      color: var(--gray-900, #1A202C);
+      color: var(--gray-900, #1a202c);
       font-family: Kanit Medium;
       font-size: 20px;
       font-style: normal;
@@ -1362,14 +1370,13 @@ a {
     }
 
     .lesson-time {
-      color: var(--gray-900, #1A202C);
+      color: var(--gray-900, #1a202c);
       font-family: Kanit Regular;
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
     }
-
   }
 
   .view-detail-wrapper {
@@ -1381,12 +1388,12 @@ a {
       width: 40px;
       height: 40.943px;
       flex-shrink: 0;
-      margin-right: 16px;;
+      margin-right: 16px;
     }
 
     .btn-view-detail {
       padding: 6px 20px;
-      color: #FFF;
+      color: #fff;
       font-family: Kanit Regular;
       font-size: 18px;
       font-style: normal;

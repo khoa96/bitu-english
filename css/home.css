@@ -233,7 +233,8 @@
   display: flex;
   align-items: center;
 }
-.home-header-content-wrapper .menu-setting-wrapper .btn-rating-table, .home-header-content-wrapper .menu-setting-wrapper .btn-parent {
+.home-header-content-wrapper .menu-setting-wrapper .btn-rating-table,
+.home-header-content-wrapper .menu-setting-wrapper .btn-parent {
   color: var(--gray-900, #1a202c);
   font-family: Kanit Medium;
   font-size: 18px;
@@ -242,7 +243,8 @@
   line-height: normal;
 }
 @media only screen and (max-width: 1599px) {
-  .home-header-content-wrapper .menu-setting-wrapper .btn-rating-table, .home-header-content-wrapper .menu-setting-wrapper .btn-parent {
+  .home-header-content-wrapper .menu-setting-wrapper .btn-rating-table,
+.home-header-content-wrapper .menu-setting-wrapper .btn-parent {
     font-size: 16px;
   }
 }
@@ -307,7 +309,10 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 32px;
+  position: relative;
+  top: -10px;
+  margin-bottom: -10px;
+  padding-bottom: 150px;
 }
 .home-page-intro-content .common-badge-wrapper .front-background {
   font-size: 30px;
@@ -330,7 +335,7 @@
 .home-page-intro-content .content-detail-wrapper .list-class {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .home-page-intro-content .content-detail-wrapper .list-class .class-item {
   min-width: 330px;
@@ -418,7 +423,6 @@
 .home-page-intro-content .content-detail-wrapper .list-option {
   width: 100%;
   display: flex;
-  align-items: flex-end;
   flex-direction: column;
 }
 .home-page-intro-content .content-detail-wrapper .list-option .option-item {
@@ -446,10 +450,61 @@
   font-weight: 400;
   line-height: 24px; /* 133.333% */
 }
+.home-page-intro-content .step-label {
+  color: var(--gray-900, #1a202c);
+  font-family: Kanit Bold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+.home-page-intro-content .highlight {
+  color: #ff6d03;
+  font-family: Kanit Bold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  margin-left: 8px;
+}
+.home-page-intro-content .txt-green-highlight {
+  color: #a1ca38;
+  font-family: Kanit Bold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  margin-left: 4px;
+}
+.home-page-intro-content .review-road-map-step-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+.home-page-intro-content .review-road-map-step-wrapper .btn-arrow-block {
+  display: block;
+  min-width: 36px;
+  max-width: 36px;
+  height: 36px;
+}
+.home-page-intro-content .review-road-map-step-wrapper .btn-arrow-block img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .check-and-try-learn-block {
   display: flex;
   justify-content: space-between;
+}
+.check-and-try-learn-block .title-block {
+  margin-bottom: 24px;
 }
 .check-and-try-learn-block .right-content {
   position: relative;
@@ -1277,6 +1332,53 @@
   width: 36px;
   height: 36px;
   flex-shrink: 0;
+}
+
+.block-page-wrapper {
+  padding-top: 100px;
+}
+.block-page-wrapper .block-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.block-page-wrapper .block-page-content__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.block-page-wrapper .block-page-content__description .title-description {
+  color: var(--gray-900, #1a202c);
+  text-align: center;
+  font-family: Kanit Bold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+.block-page-wrapper .block-page-content__description .title-description span {
+  margin-left: 8px;
+}
+.block-page-wrapper .block-page-content__description .txt-description {
+  color: var(--gray-900, #1a202c);
+  text-align: center;
+  font-family: Kanit Regular;
+  margin-top: 12px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.block-page-wrapper .image-user-block {
+  min-width: 159px;
+  max-width: 159px;
+  height: 211px;
+  flex-shrink: 0;
+  margin-bottom: 16px;
 }
 
 /*# sourceMappingURL=home.css.map */

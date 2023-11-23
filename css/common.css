@@ -638,7 +638,7 @@ a {
 }
 .popup-content .list-lesson .common-lesson-item {
   padding: 16px 0px;
-  border-bottom: 1px solid #E2E8F0;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .popup--show {
@@ -654,19 +654,29 @@ a {
   min-width: 807px;
   height: auto;
   max-width: 807px;
-  padding: 50px 32px 45px 20px;
+  padding: 50px 30px 45px 40px;
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 @media only screen and (max-width: 1599px) {
   .common-block-content {
     border-radius: 32px;
-    padding: 32px 24px 16px 16px;
-    margin-bottom: 16px;
+    padding: 50px 30px 45px 40px;
   }
 }
 .common-block-content .title-block {
   display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.common-block-content .title-block .txt-step-count {
+  color: var(--gray-900, #1a202c);
+  font-family: Kanit Bold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.48px;
 }
 .common-block-content .title-block .icon-step-1 {
   width: 70px;
@@ -684,7 +694,7 @@ a {
   .common-block-content.review-template-class {
     border-radius: 32px;
     padding: 32px 24px 45px 16px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
   }
 }
 
@@ -1290,7 +1300,7 @@ a {
   flex-grow: 1;
 }
 .common-lesson-item .lesson-detail .lesson-title {
-  color: var(--gray-900, #1A202C);
+  color: var(--gray-900, #1a202c);
   font-family: Kanit Medium;
   font-size: 20px;
   font-style: normal;
@@ -1299,7 +1309,7 @@ a {
   margin-bottom: 8px;
 }
 .common-lesson-item .lesson-detail .lesson-time {
-  color: var(--gray-900, #1A202C);
+  color: var(--gray-900, #1a202c);
   font-family: Kanit Regular;
   font-size: 14px;
   font-style: normal;
@@ -1319,7 +1329,7 @@ a {
 }
 .common-lesson-item .view-detail-wrapper .btn-view-detail {
   padding: 6px 20px;
-  color: #FFF;
+  color: #fff;
   font-family: Kanit Regular;
   font-size: 18px;
   font-style: normal;

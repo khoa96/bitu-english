@@ -200,7 +200,8 @@
     display: flex;
     align-items: center;
 
-    .btn-rating-table, .btn-parent {
+    .btn-rating-table,
+    .btn-parent {
       color: var(--gray-900, #1a202c);
       font-family: Kanit Medium;
       font-size: 18px;
@@ -282,7 +283,10 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 32px;
+  position: relative;
+  top: -10px;
+  margin-bottom: -10px;
+  padding-bottom: 150px;
 
   .common-badge-wrapper {
     .front-background {
@@ -306,14 +310,12 @@
       margin-left: 20px;
 
       @include mq(max_xxl) {
-        // font-size: 20px;
-        // margin-left: 16px;
       }
     }
     .list-class {
       width: 100%;
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
 
       .class-item {
         min-width: 330px;
@@ -411,7 +413,6 @@
     .list-option {
       width: 100%;
       display: flex;
-      align-items: flex-end;
       flex-direction: column;
       .option-item {
         display: flex;
@@ -442,11 +443,67 @@
       }
     }
   }
+
+  .step-label {
+    color: var(--gray-900, #1a202c);
+    font-family: Kanit Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.48px;
+  }
+  .highlight {
+    color: #ff6d03;
+    font-family: Kanit Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.48px;
+    margin-left: 8px;
+  }
+
+  .txt-green-highlight {
+    color: #a1ca38;
+    font-family: Kanit Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.48px;
+    margin-left: 4px;
+  }
+
+  .review-road-map-step-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+
+    .btn-arrow-block {
+      display: block;
+      min-width: 36px;
+      max-width: 36px;
+      height: 36px;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 }
 
 .check-and-try-learn-block {
   display: flex;
   justify-content: space-between;
+
+  .title-block {
+    margin-bottom: 24px;
+  }
 
   .right-content {
     position: relative;
@@ -1354,5 +1411,58 @@
         }
       }
     }
+  }
+}
+
+.block-page-wrapper {
+  padding-top: 100px;
+
+  .block-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .title-description {
+        color: var(--gray-900, #1a202c);
+        text-align: center;
+        font-family: Kanit Bold;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+
+        span {
+          margin-left: 8px;
+        }
+      }
+
+      .txt-description {
+        color: var(--gray-900, #1a202c);
+        text-align: center;
+        font-family: Kanit Regular;
+        margin-top: 12px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+
+  .image-user-block {
+    min-width: 159px;
+    max-width: 159px;
+    height: 211px;
+    flex-shrink: 0;
+    margin-bottom: 16px;
   }
 }
