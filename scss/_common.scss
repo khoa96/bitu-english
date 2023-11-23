@@ -1402,3 +1402,63 @@ a {
     }
   }
 }
+
+.common-suggestion-block {
+  border-radius: 24px;
+  background: rgba(41, 113, 240, 0.2);
+  min-width: 790px;
+  max-width: 790px;
+  padding: 12px 24px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+
+  &__left {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    .top-content {
+      display: flex;
+      align-items: center;
+
+      .txt-top {
+        color: #2971f0 !important;
+        font-family: Kanit Bold;
+        margin-left: 6px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+
+    .txt-description {
+      color: var(--gray-900, #1a202c);
+      font-family: Kanit Regular;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  &__right {
+    .btn-register-learn-try {
+      min-width: 200px;
+      padding: 6px 20px;
+      color: #fff;
+      font-family: Kanit Bold;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+
+      .txt-upper {
+        text-transform: uppercase;
+        margin-left: 4px;
+      }
+    }
+  }
+}

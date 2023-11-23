@@ -4,13 +4,13 @@
   <div class="home-page-wrapper">
     <div class="home-page-content-mask">
       <!-- IMPORT  HEADER -->
-      <?php include "templates/homeHeader.php"; ?>
+      <?php include "templates/homeHeader3.php"; ?>
       <div class="roadmap-home-page-wrapper">
         <div class="page-roadmap-content-wrapper">
           <div class="row-item">
             <!-- BẮT ĐẦU 3 LEVEL HÀNG TRÊN CÙNG -->
             <div class="row-content">
-              <div class="level-item disabled">
+              <div class="level-item ">
                 <span class="name-level">Advanced</span>
                 <div class="image-level-wrapper">
                   <img src="./images/icon-lock.png" class="icon-lock" alt="">
@@ -26,7 +26,7 @@
                   <li class="star-item"><img src="./images/icon-disable-star.png" alt="" class="star-image"></li>
                 </ul>
               </div>
-              <div class="level-item disabled">
+              <div class="level-item ">
                 <span class="name-level">Upper Flyer</span>
                 <div class="image-level-wrapper">
                   <img src="./images/icon-lock.png" class="icon-lock" alt="">
@@ -42,7 +42,7 @@
                   <li class="star-item"><img src="./images/icon-disable-star.png" alt="" class="star-image"></li>
                 </ul>
               </div>
-              <div class="level-item disabled">
+              <div class="level-item ">
                 <span class="name-level">Flyer</span>
                 <div class="image-level-wrapper">
                   <img src="./images/icon-lock.png" class="icon-lock" alt="">
@@ -64,7 +64,7 @@
 
           <!-- BẮT ĐẦU 1 LEVEL HÀNG GIỮA-->
           <div class="row-item">
-            <div class="level-item disabled">
+            <div class="level-item ">
               <span class="name-level">Upper Mover</span>
               <div class="image-level-wrapper">
                 <img src="./images/icon-lock.png" class="icon-lock" alt="">
@@ -127,7 +127,7 @@
           <!-- BẮT ĐẦU 3 LEVEL HÀNG CUỐI CÙNG -->
           <div class="row-item">
             <div class="row-content">
-              <div class="level-item disabled">
+              <div class="level-item ">
                 <span class="name-level">Starter</span>
                 <div class="image-level-wrapper">
                   <img src="./images/icon-lock.png" class="icon-lock" alt="">
@@ -183,7 +183,7 @@
                 </div>
                 <!-- HIỂN THỊ NỘI DUNG TOOLTIP KHI HOVER -->
               </div>
-              <div class="level-item disabled">
+              <div class="level-item ">
                 <span class="name-level">Upper Starter</span>
                 <div class="image-level-wrapper">
                   <img src="./images/icon-lock.png" class="icon-lock" alt="">
@@ -239,7 +239,7 @@
                 </div>
                 <!-- HIỂN THỊ NỘI DUNG TOOLTIP KHI HOVER -->
               </div>
-              <div class="level-item disabled">
+              <div class="level-item ">
                 <span class="name-level">Mover</span>
                 <div class="image-level-wrapper">
                   <img src="./images/icon-lock.png" class="icon-lock" alt="">
@@ -261,13 +261,6 @@
         </div>
       </div>
     </div>
-    <!-- button control next to road map -->
-    <button class="common-control-roadmap btn-prev">
-      <span class="btn-text">Kiểm tra &
-        học thử</span>
-      <img src="./images/icon-btn-next.png" class="icon-arrow" alt="">
-    </button>
-    <!-- button control next to road map -->
   </div>
 </body>
 

@@ -115,7 +115,7 @@
 .home-header-content-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .home-header-content-wrapper .logo-header {
   width: 157.885px;
@@ -170,21 +170,13 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  position: absolute;
-  top: 8px;
-  left: 40px;
-}
-@media only screen and (max-width: 1599px) {
-  .home-header-content-wrapper .control-step-header {
-    top: 8px;
-    left: 12px;
-  }
 }
 .home-header-content-wrapper .control-step-header .icon-btn-prev {
   min-width: 36px;
   max-width: 36px;
   height: 33px;
   object-fit: contain;
+  margin-right: 16px;
 }
 @media only screen and (max-width: 1599px) {
   .home-header-content-wrapper .control-step-header .icon-btn-prev {
